@@ -11,14 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="#0A53CF"
-        app:menu="@menu/bottom_navigation">
-
-        <Button
-            android:id="@+id/logoutBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Logout" />
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:menu="@menu/bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -249,6 +242,8 @@ Total 104,931
 Gender breakdown (Dec 31, 2022):
 Female 26%
 Male 74%"/>
+
+
 
 
 </RelativeLayout>
