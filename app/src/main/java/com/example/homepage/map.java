@@ -34,6 +34,7 @@ public class map extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
+        logo = (ImageButton) findViewById(R.id.logo);
         logo.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ClickableViewAccessibility")
             @Override

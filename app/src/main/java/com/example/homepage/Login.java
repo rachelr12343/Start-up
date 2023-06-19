@@ -68,7 +68,7 @@ public class Login extends AppCompatActivity {
                     email.setError("Invalid email address");
                     return;
                 }
-                Intent intent = new Intent(Login.this, HomePage.class);
+                Intent intent = new Intent(Login.this, MainActivity.class);
                 startActivity(intent);
             }
         });
