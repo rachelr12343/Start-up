@@ -11,7 +11,6 @@
         layout="@layout/toolbar_map" />
 
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="390dp"
@@ -151,14 +150,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.963"
-        app:srcCompat="@drawable/stairs"
-        android:importantForAccessibility="no" />
+        app:srcCompat="@drawable/stairs" />
 
     <TextView
         android:id="@+id/textview7"
