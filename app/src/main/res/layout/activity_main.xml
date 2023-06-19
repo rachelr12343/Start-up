@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#0A53CF"
+        app:menu="@menu/bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#3F51B5"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Start Up!"
+                android:textColor="#F4E9E9"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ericsson For Beginners"
+                android:textColor="#EAD9D9"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="100dp"
+        android:background="#6ACAD6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Chat"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="message your colleagues"
+                android:textColor="#6ACAD6"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/chatbutton"
+            android:layout_width="65dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="40dp"
+            android:padding="1dp"
+            android:src="@android:drawable/stat_notify_chat"
+            android:text="open chat"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="200dp"
+        android:background="#6ACAD6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Menu"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="message your colleagues"
+                android:textColor="#6ACAD6"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/menubutton"
+            android:layout_width="65dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="40dp"
+            android:padding="1dp"
+            android:src="@android:drawable/ic_dialog_info"
+            android:text="open menu" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="300dp"
+        android:background="#6ACAD6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Map"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="message your colleagues"
+                android:textColor="#6ACAD6"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/mapbutton"
+            android:layout_width="65dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="40dp"
+            android:padding="1dp"
+            android:src="@android:drawable/ic_dialog_map"
+            android:text="open map" />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="900dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="375dp"
+        android:src="@drawable/ericsson" />
+
+    <TextView
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="535dp"
+        android:scrollbars = "vertical"
+        android:text="We are a world leader in the rapidly changing environment of communications technology – by providing hardware, software, and services to enable the full value of connectivity.
+Founded: 1876
+Parent company: Telefonaktiebolaget LM Ericsson (publ)
+Company registration number: 556016-0680
+Global headquarters: Stockholm, Sweden
+President and CEO: Börje Ekholm
+Chairman of The Board: Ronnie Leten. Net sales, Q1 2023: SEK 62.6 billion.
+EBIT, Q1 2023: SEK 3.0 billion.
+
+Net sales full year 2022: SEK 271.5 billion
+EBIT, Full year 2022: SEK 27 billion
+
+Listed: Nasdaq Stockholm and on NASDAQ in New York
+
+Number of employees worldwide
+South East Asia, Oceania and India: 27,981
+North East Asia: 13,136
+North America: 11,765
+Europe and Latin America: 47,500*
+Middle East and Africa: 4,549
+
+Total 104,931
+
+* of which Sweden: 14,384
+(numbers from the latest interim report Q1 2023)
+
+Gender breakdown (Dec 31, 2022):
+Female 26%
+Male 74%"/>
+
+
+
+
+</RelativeLayout>
