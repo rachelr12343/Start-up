@@ -26,4 +26,6 @@
     <string name="stairs">Stairs</string>
     <string name="ground_floor">Ground Floor</string>
     <string name="first_floor">First Floor</string>
+    <string name="home_page">Home Page</string>
+    <string name="logout">Logout</string>
 </resources>
