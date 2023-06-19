@@ -78,4 +78,6 @@ public class Chat extends AppCompatActivity {
     public void openMainActivity(){
         Intent intent = new Intent(Chat.this, MainActivity.class);
         startActivity(intent);
+
+        //hi
 }}
