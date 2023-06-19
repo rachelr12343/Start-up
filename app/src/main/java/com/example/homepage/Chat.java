@@ -81,4 +81,5 @@ public class Chat extends AppCompatActivity {
 
         //hi
         //hello
+        //how are you
 }}
