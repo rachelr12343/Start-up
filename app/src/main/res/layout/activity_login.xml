@@ -65,18 +65,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Password" />
 
-    <ImageView
-        android:id="@+id/imageBatman"
-        android:layout_width="393dp"
-        android:layout_height="714dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483"
-        app:srcCompat="@drawable/robert_pattinson_in_the_batman_with_batarang" />
-
     <Button
         android:id="@+id/batBtn"
         android:layout_width="15dp"
@@ -119,5 +107,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/download_spongebob" />
+
+    <ImageView
+        android:id="@+id/imageBatman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/robert_pattinson_in_the_batman_with_batarang" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
