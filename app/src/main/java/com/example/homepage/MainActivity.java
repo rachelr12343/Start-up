@@ -10,13 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import java.util.Map;
-
 public class MainActivity extends AppCompatActivity {
 
     ImageButton button;
     Button logout;
-    ImageButton mapbutton;
+    ImageButton map;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mapbutton = (ImageButton) findViewById(R.id.mapbutton);
-        mapbutton.setOnClickListener(new View.OnClickListener() {
+        map = (ImageButton) findViewById(R.id.mapButton);
+        map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, map.class);
@@ -52,10 +50,18 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        ImageButton map = (ImageButton)findViewById(R.id.mapButton);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, com.example.homepage.map.class));
+            }
+        });
+
     }
     public void openNewActivity(){
         Intent intent = new Intent(MainActivity.this, Chat.class);
         startActivity(intent);
-
     }
 }
