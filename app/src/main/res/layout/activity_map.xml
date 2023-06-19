@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:contentDescription="@string/toilet"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.113"
@@ -112,7 +113,8 @@
         app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859" />
+        app:layout_constraintVertical_bias="0.859"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView4"
@@ -126,7 +128,8 @@
         app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintVertical_bias="0.736"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView5"
@@ -137,10 +140,11 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintVertical_bias="0.88" />
+        app:layout_constraintVertical_bias="0.88"
+        tools:ignore="TextSizeCheck" />
 
     <ImageButton
         android:id="@+id/stairsbtn"
@@ -168,15 +172,17 @@
         app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.997" />
+        app:layout_constraintVertical_bias="0.997"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/firstFloor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00B0FF"
+        android:background="@color/dark_blue"
         android:backgroundTint="@color/dark_blue"
         android:text="@string/first_floor"
+        android:textColor="@color/white"
         android:textColorHighlight="#03A9F4"
         android:textColorLink="#2196F3"
         app:iconTint="#00B0FF"
@@ -185,6 +191,7 @@
         app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.978" />
+        app:layout_constraintVertical_bias="0.978"
+        app:strokeColor="#03A9F4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
