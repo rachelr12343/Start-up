@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton button;
     Button logout;
     ImageButton map;
+    ImageButton menu;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -37,6 +38,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        menu = (ImageButton) findViewById(R.id.menubutton);
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, menu.class);
+                startActivity(intent);
+            }
+        });
+
         logout = findViewById(R.id.logoutBtn);
 
         logout.setOnClickListener(new View.OnClickListener() {
