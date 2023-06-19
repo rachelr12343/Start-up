@@ -2,6 +2,7 @@ package com.example.homepage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton button;
     Button logout;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
