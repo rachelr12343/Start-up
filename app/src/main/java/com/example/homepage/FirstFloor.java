@@ -9,38 +9,36 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import com.example.homepage.MainActivity;
 
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 
 public class FirstFloor extends AppCompatActivity {
+
+    ImageView firstFloorImg;
     ImageButton logo;
     ImageButton toiletbtn;
     ImageButton printbtn;
     ImageButton quietbtn;
     ImageButton coffeebtn;
     ImageButton stairsbtn;
-    ImageView firstFloorImg;
     Button groundFloor;
+
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceSate) {
-        super.onCreate(savedInstanceSate);
+    protected void onCreate (@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.first_floor);
 
-        groundFloor.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("ClickableViewAccessibility")
-            @Override
-            public void onClick(View v) {
-                openMap();
-            }
-        });
-    }
-    public void openMap() {
-        Intent intent = new Intent(FirstFloor.this, Map.class);
-        startActivity(intent);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar();
+
+        logo = (ImageButton) findViewById(R.id.logo);
 
         logo.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ClickableViewAccessibility")
@@ -50,16 +48,29 @@ public class FirstFloor extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        groundFloor = (Button) findViewById(R.id.groundFloor);
+
+        groundFloor.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ClickableViewAccessibility")
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(FirstFloor.this, Map.class);
+                FirstFloor.this.startActivity(i);
+            }
+        });
     }
+
     private void setSupportActionBar() {
 
-        firstFloorImg = (ImageView) findViewById(R.id.firstFloorImg);
+        firstFloorImg = findViewById(R.id.firstFloorImg);
 
-        toiletbtn = (ImageButton) findViewById(R.id.toiletbtn);
-        printbtn = (ImageButton) findViewById(R.id.printbtn);
-        quietbtn = (ImageButton) findViewById(R.id.quietbtn);
-        coffeebtn = (ImageButton) findViewById(R.id.coffeebtn);
-        stairsbtn = (ImageButton) findViewById(R.id.stairsbtn);
+
+        toiletbtn = findViewById(R.id.toiletbtn);
+        printbtn = findViewById(R.id.printbtn);
+        quietbtn = findViewById(R.id.quietbtn);
+        coffeebtn = findViewById(R.id.coffeebtn);
+        stairsbtn = findViewById(R.id.stairsbtn);
 
         toiletbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +82,7 @@ public class FirstFloor extends AppCompatActivity {
         printbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 firstFloorImg.setImageResource(R.mipmap.first_floor_print);
             }
         });
@@ -78,6 +90,7 @@ public class FirstFloor extends AppCompatActivity {
         quietbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 firstFloorImg.setImageResource(R.mipmap.first_floor_break);
             }
         });
@@ -91,6 +104,7 @@ public class FirstFloor extends AppCompatActivity {
         stairsbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 firstFloorImg.setImageResource(R.mipmap.first_floor_stairs);
             }
         });
