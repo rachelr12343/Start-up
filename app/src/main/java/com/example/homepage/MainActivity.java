@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
 
     ImageButton button;
     Button logout;
+    ImageButton map;
+    ImageButton menu;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -27,6 +29,25 @@ public class MainActivity extends AppCompatActivity {
                 openNewActivity();
             }
         });
+
+        map = (ImageButton) findViewById(R.id.mapButton);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, map.class);
+                startActivity(intent);
+            }
+        });
+
+        menu = (ImageButton) findViewById(R.id.menubutton);
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, menu.class);
+                startActivity(intent);
+            }
+        });
+
         logout = findViewById(R.id.logoutBtn);
 
         logout.setOnClickListener(new View.OnClickListener() {
@@ -37,10 +58,18 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putString("remember", "false");
                 editor.apply();
-
                 finish();
             }
         });
+
+        ImageButton map = (ImageButton)findViewById(R.id.mapButton);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, com.example.homepage.map.class));
+            }
+        });
+
     }
     public void openNewActivity(){
         Intent intent = new Intent(MainActivity.this, Chat.class);

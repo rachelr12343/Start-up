@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Homepage</string>
+    <string name="login">Login</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="sub_item_1">Sub Item 1</string>
+    <string name="sub_item_2">Sub Item 2</string>
+    <string name="map">Map</string>
+    <string name="chat">Chat</string>
+    <string name="logo">Logo</string>
+    <string name="todo">TODO</string>
+    <string name="map_of_ericsson_athlone">  Map of Ericsson Athlone</string>
+    <string name="canteen_menu">Canteen Menu</string>
+    <string name="layout">TODO</string>
+    <string name="chat_function">Chat function</string>
+    <string name="faq">FAQ</string>
+    <string name="toilet">toilet</string>
+    <string name="coffeeicon">coffeeicon</string>
+    <string name="prayer">prayer</string>
+    <string name="quiet">quiet</string>
+    <string name="toilets">Toilets</string>
+    <string name="break_rooms">Break Rooms</string>
+    <string name="prayer_rooms">Prayer Rooms</string>
+    <string name="quiet_rooms">Quiet Rooms</string>
+    <string name="copy_print">Copy/ Print</string>
+    <string name="stairs">Stairs</string>
+    <string name="ground_floor">Ground Floor</string>
+    <string name="first_floor">First Floor</string>
+    <string name="home_page">Home Page</string>
+    <string name="logout">Logout</string>
 </resources>
