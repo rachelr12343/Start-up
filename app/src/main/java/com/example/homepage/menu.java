@@ -1,29 +1,23 @@
 package com.example.homepage;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-<<<<<<< Updated upstream
-import android.view.View;
-import android.widget.ImageButton;
-=======
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
->>>>>>> Stashed changes
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Map;
 
 public class menu extends AppCompatActivity {
     ImageButton logo;
 
-    ImageButton logo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,14 +36,11 @@ public class menu extends AppCompatActivity {
             }
         });
     }
-<<<<<<< Updated upstream
     public void openMainActivity() {
         Intent intent = new Intent(menu.this, MainActivity.class);
         startActivity(intent);
     }
 
-}
-=======
 
         @Override
         public boolean onCreateOptionsMenu (Menu menu){
@@ -85,5 +76,5 @@ public class menu extends AppCompatActivity {
 
         }
     }
->>>>>>> Stashed changes
+
 
