@@ -16,11 +16,7 @@
             android:name=".HomePage"
             android:exported="false" />
         <activity
-<<<<<<< HEAD
             android:name=".MainActivity"
-=======
-            android:name=".Login"
->>>>>>> parent of 16de2b7 (fixed homepage)
             android:exported="false" />
         <activity
             android:name=".map"
@@ -32,11 +28,7 @@
             android:name=".Chat"
             android:exported="false" />
         <activity
-<<<<<<< HEAD
             android:name=".Login"
-=======
-            android:name=".MainActivity"
->>>>>>> parent of 16de2b7 (fixed homepage)
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
