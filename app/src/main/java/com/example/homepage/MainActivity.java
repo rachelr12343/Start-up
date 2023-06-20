@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openNewActivity();
-            }
+                Intent intent = new Intent(MainActivity.this, Chat.class);
+                startActivity(intent);            }
 
             private void openNewActivity() {
             }
