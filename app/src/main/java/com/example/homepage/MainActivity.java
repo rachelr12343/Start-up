@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     ImageButton faq;
     ImageButton menu;
 
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +84,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, com.example.homepage.map.class));
             }
         });
-
     }
 }
