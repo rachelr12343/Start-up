@@ -55,7 +55,7 @@ public class FAQ extends AppCompatActivity {
                         public void run() {
                             answerOne.setVisibility(View.INVISIBLE);
                         }
-                    }, 50000);
+                    }, 60000);
                     answerOne.setVisibility(View.VISIBLE);
                 }
             }
@@ -72,7 +72,7 @@ public class FAQ extends AppCompatActivity {
                         public void run() {
                             answerTwo.setVisibility(View.INVISIBLE);
                         }
-                    }, 50000);
+                    }, 60000);
                     answerTwo.setVisibility(View.VISIBLE);
                 }
             }
@@ -89,7 +89,7 @@ public class FAQ extends AppCompatActivity {
                         public void run() {
                             answerThree.setVisibility(View.INVISIBLE);
                         }
-                    }, 50000);
+                    }, 60000);
                     answerThree.setVisibility(View.VISIBLE);
                 }
             }
@@ -106,7 +106,7 @@ public class FAQ extends AppCompatActivity {
                         public void run() {
                             answerFour.setVisibility(View.INVISIBLE);
                         }
-                    }, 50000);
+                    }, 60000);
                     answerFour.setVisibility(View.VISIBLE);
                 }
             }

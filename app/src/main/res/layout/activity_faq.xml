@@ -69,7 +69,7 @@
         android:layout_width="246dp"
         android:layout_height="72dp"
         android:gravity="center|top"
-        android:text="If your laptop is not preforming well, you cna take it to the IT department in Zone 5 and they can fix it."
+        android:text="If your laptop is not preforming well, you can take it to the IT department in Zone 5 and they can fix it."
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -125,7 +125,7 @@
         app:layout_constraintVertical_bias="0.083" />
 
     <ImageButton
-        android:id="@+id/FAQimagwBtn"
+        android:id="@+id/FAQimageBtn"
         android:layout_width="72dp"
         android:layout_height="56dp"
         android:backgroundTint="#1F75FD"
