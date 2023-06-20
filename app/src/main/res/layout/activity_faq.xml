@@ -125,11 +125,12 @@
         app:layout_constraintVertical_bias="0.083" />
 
     <ImageButton
-        android:id="@+id/FAQimageBtn"
-        android:layout_width="55dp"
+        android:id="@+id/FAQimagwBtn"
+        android:layout_width="72dp"
         android:layout_height="56dp"
+        android:backgroundTint="#1F75FD"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.002"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ericsson_logo" />
