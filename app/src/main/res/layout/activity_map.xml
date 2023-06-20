@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_blue"
+    android:background="@color/white"
     tools:context=".map">
 
     <include
@@ -35,7 +35,7 @@
         android:id="@+id/toiletbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/light_blue"
+        android:background="@color/white"
         android:contentDescription="@string/toilet"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,7 +50,7 @@
         android:id="@+id/coffeebtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/light_blue"
+        android:background="@color/white"
         android:contentDescription="@string/coffeeicon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,14 +58,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.854"
-        app:tint="#000000"
-        app:srcCompat="@drawable/coffee_symbol" />
+        app:srcCompat="@drawable/coffee_symbol"
+        app:tint="#000000" />
 
     <ImageButton
         android:id="@+id/printbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/light_blue"
+        android:background="@color/white"
         android:contentDescription="@string/prayer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +79,7 @@
         android:id="@+id/quietbtn"
         android:layout_width="54dp"
         android:layout_height="70dp"
-        android:background="@color/light_blue"
+        android:background="@color/white"
         android:contentDescription="@string/quiet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,7 +152,7 @@
         android:id="@+id/stairsbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/light_blue"
+        android:background="@color/white"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
