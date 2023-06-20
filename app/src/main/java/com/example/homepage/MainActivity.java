@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     ImageButton map;
     ImageButton menu;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
