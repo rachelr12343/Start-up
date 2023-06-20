@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class FAQ extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class FAQ extends AppCompatActivity {
     TextView answerThree;
     Button questionFour;
     TextView answerFour;
+    ImageButton homeBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,14 @@ public class FAQ extends AppCompatActivity {
         answerThree = findViewById(R.id.answer3);
         questionFour = findViewById(R.id.button4);
         answerFour = findViewById(R.id.answer4);
+        homeBtn = findViewById(R.id.FAQimageBtn);
+
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         questionOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +55,7 @@ public class FAQ extends AppCompatActivity {
                         public void run() {
                             answerOne.setVisibility(View.INVISIBLE);
                         }
-                    }, 50000);
+                    }, 60000);
                     answerOne.setVisibility(View.VISIBLE);
                 }
             }
@@ -62,7 +72,7 @@ public class FAQ extends AppCompatActivity {
                         public void run() {
                             answerTwo.setVisibility(View.INVISIBLE);
                         }
-                    }, 50000);
+                    }, 60000);
                     answerTwo.setVisibility(View.VISIBLE);
                 }
             }
@@ -79,7 +89,7 @@ public class FAQ extends AppCompatActivity {
                         public void run() {
                             answerThree.setVisibility(View.INVISIBLE);
                         }
-                    }, 50000);
+                    }, 60000);
                     answerThree.setVisibility(View.VISIBLE);
                 }
             }
@@ -96,7 +106,7 @@ public class FAQ extends AppCompatActivity {
                         public void run() {
                             answerFour.setVisibility(View.INVISIBLE);
                         }
-                    }, 50000);
+                    }, 60000);
                     answerFour.setVisibility(View.VISIBLE);
                 }
             }
