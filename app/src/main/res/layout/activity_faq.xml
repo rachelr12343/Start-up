@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:text="Question 1"
+        android:text="How many hours am i required to work every week?"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -19,11 +19,11 @@
 
     <TextView
         android:id="@+id/answer1"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="263dp"
+        android:layout_height="66dp"
         android:gravity="center|top"
-        android:text="Answer 1"
-        android:visibility="invisible"
+        android:text="You are required to work 40 hours per week which is 8 hours per day. Our employees begin work at 9 and end at 5."
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
@@ -33,7 +33,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:text="Question 2"
+        android:text="What is the dress code?"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -41,11 +41,11 @@
 
     <TextView
         android:id="@+id/answer2"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="273dp"
+        android:layout_height="76dp"
         android:gravity="center|top"
-        android:text="Answer 2"
-        android:visibility="invisible"
+        android:text="The suitable style of clothing to wear at Ericsson is Smart Casual. ie. jeans, polo shirts, button-down shirts, blazers and dresses etc. "
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
@@ -55,7 +55,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:text="Question 3"
+        android:text="Where do I go if my laptop is broken or not functioning properly?"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -63,11 +63,11 @@
 
     <TextView
         android:id="@+id/answer3"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="246dp"
+        android:layout_height="72dp"
         android:gravity="center|top"
-        android:text="Answer 3"
-        android:visibility="invisible"
+        android:text="If your laptop is not preforming well, you cna take it to the IT department in Zone 5 and they can fix it."
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
@@ -77,7 +77,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="140dp"
-        android:text="Question 4"
+        android:text="Where is the Ericsson building situated?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -85,11 +85,11 @@
 
     <TextView
         android:id="@+id/answer4"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
         android:gravity="center|top"
-        android:text="Answer 4"
-        android:visibility="invisible"
+        android:text="Ericsson is situated in Cornamaddy, Athlone, Co. Westmeath. The Eircode is N37 PV44."
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
