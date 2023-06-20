@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         logout = findViewById(R.id.logoutBtn);
 
         logout.setOnClickListener(new View.OnClickListener() {
