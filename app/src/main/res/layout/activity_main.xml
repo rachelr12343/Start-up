@@ -220,7 +220,7 @@
         android:layout_width="1000dp"
         android:layout_height="100dp"
         android:layout_marginTop="535dp"
-        android:scrollbars = "vertical"
+        android:scrollbars="vertical"
         android:text="We are a world leader in the rapidly changing environment of communications technology – by providing hardware, software, and services to enable the full value of connectivity.
 Founded: 1876
 Parent company: Telefonaktiebolaget LM Ericsson (publ)
@@ -249,7 +249,7 @@ Total 104,931
 
 Gender breakdown (Dec 31, 2022):
 Female 26%
-Male 74%"/>
+Male 74%" />
 
 
 </RelativeLayout>
