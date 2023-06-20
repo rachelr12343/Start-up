@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ public class Chat extends AppCompatActivity {
     private TextView chatTextView;
 
     private StringBuilder chatHistory;
+    ImageButton homeButton;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -27,6 +29,14 @@ public class Chat extends AppCompatActivity {
         messageEditText = findViewById(R.id.message_edit_text);
         sendButton = findViewById(R.id.send_button);
         chatTextView = findViewById(R.id.chat_text_view);
+        homeButton = findViewById(R.id.imageButton);
+
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         chatHistory = new StringBuilder();
 
