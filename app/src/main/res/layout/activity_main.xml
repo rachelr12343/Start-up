@@ -150,7 +150,9 @@
             android:layout_marginLeft="40dp"
             android:padding="1dp"
             android:src="@android:drawable/ic_dialog_info"
-            android:text="open menu" />
+            android:text="open menu"
+            tools:ignore="OnClick" />
+
 
     </LinearLayout>
 
@@ -202,7 +204,8 @@
             android:layout_marginLeft="40dp"
             android:padding="1dp"
             android:src="@android:drawable/ic_dialog_map"
-            android:text="open map" />
+            android:text="open map"
+            tools:ignore="OnClick" />
 
 
     </LinearLayout>
