@@ -12,7 +12,9 @@ public class menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
     }
+
     public void openMainActivity(){
         Intent intent = new Intent(menu.this, MainActivity.class);
         startActivity(intent);
 }}
+
