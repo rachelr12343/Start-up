@@ -43,38 +43,12 @@ public class map extends AppCompatActivity {
             }
         });
 
-        firstFloor = (Button) findViewById(R.id.firstFloor);
-
-        firstFloor.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            openFirstFloor();
-        }
-        });
-    }
-
-    public void openFirstFloor() {
-        Intent intent = new Intent(map.this,FirstFloor.class);
-        startActivity(intent);
-    }
-    @SuppressLint("ClickableViewAccessibility")
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.bottom_navigation, menu);
-        return true;
-    }
-
-    private void setSupportActionBar() {
-
         imageView = findViewById(R.id.imageView);
-
-
-        toiletbtn = (ImageButton) findViewById(R.id.toiletbtn);
-        printbtn = (ImageButton) findViewById(R.id.printbtn);
-        quietbtn = (ImageButton) findViewById(R.id.quietbtn);
-        coffeebtn = (ImageButton) findViewById(R.id.coffeebtn);
-        stairsbtn = (ImageButton) findViewById(R.id.stairsbtn);
+        toiletbtn = findViewById(R.id.toiletbtn);
+        printbtn = findViewById(R.id.printbtn);
+        quietbtn = findViewById(R.id.quietbtn);
+        coffeebtn = findViewById(R.id.coffeebtn);
+        stairsbtn = findViewById(R.id.stairsbtn);
 
         toiletbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,6 +82,31 @@ public class map extends AppCompatActivity {
                 imageView.setImageResource(R.mipmap.main_layout_stairs);
             }
         });
+
+        firstFloor = (Button) findViewById(R.id.firstFloor);
+
+        firstFloor.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            openFirstFloor();
+        }
+        });
+    }
+
+    public void openFirstFloor() {
+        Intent intent = new Intent(map.this,FirstFloor.class);
+        startActivity(intent);
+    }
+    @SuppressLint("ClickableViewAccessibility")
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.bottom_navigation, menu);
+        return true;
+    }
+
+    private void setSupportActionBar() {
+
     }
 }
 
