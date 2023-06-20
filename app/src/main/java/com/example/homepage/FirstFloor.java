@@ -10,8 +10,6 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.homepage.MainActivity;
-
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
@@ -24,7 +22,6 @@ public class FirstFloor extends AppCompatActivity {
     ImageButton coffeebtn;
     ImageButton stairsbtn;
     ImageView firstFloorImg;
-
     Button groundFloor;
 
     @SuppressLint("ClickableViewAccessibility")
@@ -32,8 +29,6 @@ public class FirstFloor extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceSate) {
         super.onCreate(savedInstanceSate);
         setContentView(R.layout.first_floor);
-
-        setSupportActionBar();
 
         groundFloor.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ClickableViewAccessibility")
@@ -46,9 +41,6 @@ public class FirstFloor extends AppCompatActivity {
     public void openMap() {
         Intent intent = new Intent(FirstFloor.this, Map.class);
         startActivity(intent);
-
-
-        logo = (ImageButton) findViewById(R.id.logo);
 
         logo.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ClickableViewAccessibility")

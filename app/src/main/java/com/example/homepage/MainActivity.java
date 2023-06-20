@@ -1,11 +1,10 @@
 package com.example.homepage;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+<<<<<<< Updated upstream
 import android.text.method.ScrollingMovementMethod;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -16,6 +15,20 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import java.util.Random;
+=======
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Map;
+>>>>>>> Stashed changes
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
     ImageButton faq;
     ImageButton menu;
 
+<<<<<<< Updated upstream
+=======
+
+    @SuppressLint("MissingInflatedId")
+>>>>>>> Stashed changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openNewActivity();
+            }
+
+            private void openNewActivity() {
             }
         });
 
@@ -88,9 +109,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
-    public void openNewActivity(){
-        Intent intent = new Intent(MainActivity.this, Chat.class);
-        startActivity(intent);
     }
 }
