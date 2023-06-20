@@ -2,6 +2,7 @@ package com.example.homepage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -101,4 +102,7 @@ public class FAQ extends AppCompatActivity {
             }
         });
     }
-}
+    public void openMainActivity(){
+        Intent intent = new Intent(FAQ.this, MainActivity.class);
+        startActivity(intent);
+}}

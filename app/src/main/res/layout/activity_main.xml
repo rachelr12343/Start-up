@@ -57,8 +57,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="85dp"
         android:background="#6ACAD6"
         android:gravity="center"
         android:orientation="horizontal"
@@ -110,8 +110,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
         android:background="#6ACAD6"
         android:gravity="center"
         android:orientation="horizontal"
@@ -164,8 +164,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="215dp"
         android:background="#6ACAD6"
         android:gravity="center"
         android:orientation="horizontal"
@@ -209,17 +209,70 @@
 
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="280dp"
+        android:background="#6ACAD6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="FAQ"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="message your colleagues"
+                android:textColor="#6ACAD6"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/faqButton"
+            android:layout_width="65dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="40dp"
+            android:padding="1dp"
+            android:src="@android:drawable/ic_dialog_info"
+            android:text="open faq"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
 
     <ImageView
         android:layout_width="900dp"
         android:layout_height="150dp"
-        android:layout_marginTop="375dp"
+        android:layout_marginTop="350dp"
         android:src="@drawable/ericssonpic" />
 
     <TextView
         android:layout_width="1000dp"
         android:layout_height="100dp"
-        android:layout_marginTop="535dp"
+        android:layout_marginTop="510dp"
         android:scrollbars="vertical"
         android:text="We are a world leader in the rapidly changing environment of communications technology – by providing hardware, software, and services to enable the full value of connectivity.
 Founded: 1876.
