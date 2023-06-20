@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         faq = (ImageButton) findViewById(R.id.faqButton);
         faq.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
         logout = findViewById(R.id.logoutBtn);
 
