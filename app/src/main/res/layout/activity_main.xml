@@ -17,6 +17,7 @@
             android:id="@+id/logoutBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#0A53CE"
             android:text="Logout" />
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
