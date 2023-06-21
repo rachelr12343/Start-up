@@ -16,6 +16,7 @@ public class Chat extends AppCompatActivity {
     private EditText messageEditText;
     private Button sendButton;
     private TextView chatTextView;
+    ImageButton logo;
 
     private StringBuilder chatHistory;
     ImageButton homeButton;
@@ -29,16 +30,20 @@ public class Chat extends AppCompatActivity {
         messageEditText = findViewById(R.id.message_edit_text);
         sendButton = findViewById(R.id.send_button);
         chatTextView = findViewById(R.id.chat_text_view);
-        homeButton = findViewById(R.id.imageButton);
+        chatHistory = new StringBuilder();
 
-        homeButton.setOnClickListener(new View.OnClickListener() {
+        logo = (ImageButton)
+
+                findViewById(R.id.logo);
+
+        logo.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ClickableViewAccessibility")
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(Chat.this, MainActivity.class);
+                startActivity(intent);
             }
         });
-
-        chatHistory = new StringBuilder();
 
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
