@@ -82,7 +82,7 @@ public class Chat extends AppCompatActivity {
 
     private String generateResponse(String message) {
         // Replace this with your logic to generate the chatbot's response
-        return "This is the chatbot's response to: " + message;
+        return "ug ug ug ug ug " /*+ message*/;
     }
 
     @Override
