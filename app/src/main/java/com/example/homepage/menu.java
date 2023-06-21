@@ -54,6 +54,7 @@ public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClick
                 Toast.makeText(this, "Map selected", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(menu.this, map.class);
                 startActivity(intent);
+                return true;
             } else if (itemId == R.id.item3) {
                 Toast.makeText(this, "Chat selected", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(menu.this, Chat.class);
@@ -76,5 +77,3 @@ public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClick
 
     }
 }
-
-
