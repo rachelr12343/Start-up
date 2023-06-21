@@ -112,6 +112,7 @@ public class FAQ extends AppCompatActivity {
             }
         });
     }
+
     public void openMainActivity(){
         Intent intent = new Intent(FAQ.this, MainActivity.class);
         startActivity(intent);

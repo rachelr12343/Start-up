@@ -37,11 +37,11 @@ public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClick
             }
         });
     }
+
     public void openMainActivity() {
         Intent intent = new Intent(menu.this, MainActivity.class);
         startActivity(intent);
     }
-
 
         @Override
         public boolean onCreateOptionsMenu (Menu menu){
@@ -49,6 +49,7 @@ public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClick
             inflater.inflate(R.menu.example_menu, menu);
             return true;
         }
+
         public void openNewActivity () {
             Intent intent = new Intent(menu.this, Chat.class);
             startActivity(intent);
@@ -76,7 +77,6 @@ public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClick
                 return true;
             }
             return super.onOptionsItemSelected(item);
-
         }
 
     public void showPopup(View v) {
