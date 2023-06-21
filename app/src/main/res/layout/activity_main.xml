@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seemore"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -22,38 +23,38 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="#3F51B5"
-            android:orientation="vertical"
-            android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3F51B5"
+        android:orientation="vertical"
+        android:padding="5dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20sp"
-                android:fontFamily="sans-serif-black"
-                android:gravity="center"
-                android:text="Start Up!"
-                android:textColor="#F4E9E9"
-                android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Start Up!"
+            android:textColor="#F4E9E9"
+            android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Ericsson For Beginners"
-                android:textColor="#EAD9D9"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"/>
+            android:layout_marginLeft="20dp"
+            android:text="Ericsson For Beginners"
+            android:textColor="#EAD9D9"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
 
 
     <LinearLayout
@@ -104,9 +105,9 @@
     </LinearLayout>
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
 
 
     <LinearLayout
@@ -158,9 +159,9 @@
     </LinearLayout>
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
 
 
     <LinearLayout
@@ -210,10 +211,11 @@
 
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"/>
+        android:orientation="vertical" />
 
 
     <LinearLayout
@@ -272,38 +274,15 @@
 
     <TextView
         android:layout_width="1000dp"
-        android:layout_height="100dp"
+        android:layout_height="120dp"
         android:layout_marginTop="510dp"
-        android:scrollbars="vertical"
         android:text="We are a world leader in the rapidly changing environment of communications technology – by providing hardware, software, and services to enable the full value of connectivity.
 Founded: 1876.
 Parent company: Telefonaktiebolaget LM Ericsson (publ).
 Company registration number: 556016-0680.
 Global headquarters: Stockholm, Sweden.
 President and CEO: Börje Ekholm.
-Chairman of The Board: Ronnie Leten. Net sales, Q1 2023: SEK 62.6 billion.
-EBIT, Q1 2023: SEK 3.0 billion.
-
-Net sales full year 2022: SEK 271.5 billion.
-EBIT, Full year 2022: SEK 27 billion.
-
-Listed: Nasdaq Stockholm and on NASDAQ in New York.
-
-Number of employees worldwide.
-South East Asia, Oceania and India: 27,981.
-North East Asia: 13,136.
-North America: 11,765.
-Europe and Latin America: 47,500*.
-Middle East and Africa: 4,549.
-
-Total 104,931.
-
-* of which Sweden: 14,384.
-(numbers from the latest interim report Q1 2023).
-
-Gender breakdown (Dec 31, 2022):
-Female 26%
-Male 74%." />
+Chairman of The Board: Ronnie Leten  . . . " />
 
 
 </RelativeLayout>
