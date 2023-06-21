@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, com.example.homepage.map.class));
+                startActivity(new Intent(MainActivity.this, map.class));
             }
         });
     }

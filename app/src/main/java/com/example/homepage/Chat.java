@@ -34,9 +34,10 @@ public class Chat extends AppCompatActivity {
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
-            }
-        });
+                Intent intent = new Intent(Chat.this, MainActivity.class);
+                startActivity(intent);
+        }
+    });
 
         chatHistory = new StringBuilder();
 
