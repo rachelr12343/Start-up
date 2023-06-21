@@ -40,7 +40,8 @@ public class FAQ extends AppCompatActivity {
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(FAQ.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 
