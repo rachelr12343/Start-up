@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,14 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#0A53CF">
+        android:background="#0A53CF"
+        tools:ignore="VisualLintBottomNav">
 
         <Button
             android:id="@+id/logoutBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#0A53CE"
-            android:text="Logout" />
+            android:text="@string/logout_text" />
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -31,28 +31,23 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="Start Up!"
+            android:text="@string/start_up"
             android:textColor="#F4E9E9"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="Ericsson For Beginners"
+            android:layout_marginStart="20dp"
+            android:text="@string/ericsson_for_beginners"
             android:textColor="#EAD9D9"
             android:textSize="15sp"
             android:textStyle="bold" />
 
     </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
 
 
     <LinearLayout
@@ -62,7 +57,8 @@
         android:background="#6ACAD6"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="3dp">
+        android:padding="3dp"
+        tools:ignore="TextSizeCheck">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -73,18 +69,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                android:text="Chat"
+                android:text="@string/chat_text"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="23sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:text="message your colleagues"
+                android:layout_marginStart="15dp"
+                android:text="@string/message_your_colleagues"
                 android:textColor="#6ACAD6"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -94,19 +91,15 @@
             android:id="@+id/chatbutton"
             android:layout_width="65dp"
             android:layout_height="64dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
             android:background="#6ACAD6"
+            android:importantForAccessibility="no"
             android:padding="1dp"
             android:src="@android:drawable/stat_notify_chat"
-            android:text="open chat"
-            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+            android:text="@string/open_chat"
+            tools:ignore="OnClick,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
 
     </LinearLayout>
-
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
 
 
     <LinearLayout
@@ -116,7 +109,8 @@
         android:background="#6ACAD6"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="3dp">
+        android:padding="3dp"
+        tools:ignore="TextSizeCheck">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -127,18 +121,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                android:text="Menu"
+                android:text="@string/menu_text"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="23sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:text="message your colleagues"
+                android:layout_marginStart="15dp"
+                android:text="@string/message_your_colleagues_text"
                 android:textColor="#6ACAD6"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -148,20 +143,16 @@
             android:id="@+id/menubutton"
             android:layout_width="62dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
             android:background="#6ACAD6"
+            android:importantForAccessibility="no"
             android:padding="1dp"
             android:src="@android:drawable/ic_dialog_info"
-            android:text="open menu"
-            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+            android:text="@string/open_menu"
+            tools:ignore="OnClick,SpeakableTextPresentCheck,ImageContrastCheck" />
 
 
     </LinearLayout>
-
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
 
 
     <LinearLayout
@@ -171,7 +162,8 @@
         android:background="#6ACAD6"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="3dp">
+        android:padding="3dp"
+        tools:ignore="TextSizeCheck">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -182,18 +174,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                android:text="Map"
+                android:text="@string/map_text"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="23sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:text="message your colleagues"
+                android:layout_marginStart="15dp"
+                android:text="@string/message_your_colleagues1"
                 android:textColor="#6ACAD6"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -203,19 +196,16 @@
             android:id="@+id/mapButton"
             android:layout_width="65dp"
             android:layout_height="64dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
             android:background="#6ACAD6"
+            android:importantForAccessibility="no"
             android:padding="1dp"
             android:src="@android:drawable/ic_dialog_map"
-            android:text="open map"
-            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+            android:text="@string/open_map"
+            tools:ignore="OnClick,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
 
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"/>
 
 
     <LinearLayout
@@ -225,7 +215,8 @@
         android:background="#6ACAD6"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="3dp">
+        android:padding="3dp"
+        tools:ignore="TextSizeCheck">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -236,18 +227,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
-                android:text="FAQ"
+                android:text="@string/faq_text"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="23sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:text="message your colleagues"
+                android:layout_marginStart="15dp"
+                android:text="@string/message_your_colleagues3"
                 android:textColor="#6ACAD6"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -257,12 +249,13 @@
             android:id="@+id/faqButton"
             android:layout_width="65dp"
             android:layout_height="64dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
             android:background="#6ACAD6"
+            android:importantForAccessibility="no"
             android:padding="1dp"
             android:src="@android:drawable/ic_dialog_info"
-            android:text="open faq"
-            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+            android:text="@string/open_faq"
+            tools:ignore="OnClick,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
 
 
     </LinearLayout>
@@ -271,7 +264,8 @@
         android:layout_width="900dp"
         android:layout_height="150dp"
         android:layout_marginTop="350dp"
-        android:src="@drawable/ericssonpic" />
+        android:src="@drawable/ericssonpic"
+        android:importantForAccessibility="no" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -281,13 +275,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="346dp"
-                android:text="We are a world leader in the rapidly changing environment of communications technology – by providing hardware, software, and services to enable the full value of connectivity. Founded: 1876. Global headquarters: Stockholm, Sweden. President and CEO: Börje Ekholm. Chairman of The Board: Ronnie Leten. Net sales, Q1 2023: SEK 62.6 billion. EBIT, Q1 2023: SEK 3.0 billion. Listed: Nasdaq Stockholm and on NASDAQ in New York. Number of employees worldwide. South East Asia, Oceania and India: 27,981. North East Asia: 13,136. North America: 11,765. Europe and Latin America: 47,500*. Middle East and Africa: 4,549. Total 104,931. * of which Sweden: 14,384. (numbers from the latest interim report Q1 2023). Gender breakdown (Dec 31, 2022): Female 26% Male 74%."></TextView>
+                android:text="@string/about"
+                tools:ignore="VisualLintLongText">
+            </TextView>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

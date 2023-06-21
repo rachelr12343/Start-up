@@ -63,4 +63,20 @@
     ]]></string>
     <string name="menu">Menu</string>
     <string name="toolbar_chat">             Chat</string>
+    <string name="logout_text">Logout</string>
+    <string name="start_up">Start Up!</string>
+    <string name="ericsson_for_beginners">Ericsson For Beginners</string>
+    <string name="chat_text">Chat</string>
+    <string name="message_your_colleagues">message your colleagues</string>
+    <string name="open_chat">open chat</string>
+    <string name="menu_text">Menu</string>
+    <string name="message_your_colleagues_text">message your colleagues</string>
+    <string name="open_menu">open menu</string>
+    <string name="map_text">Map</string>
+    <string name="message_your_colleagues1">message your colleagues</string>
+    <string name="open_map">open map</string>
+    <string name="faq_text">FAQ</string>
+    <string name="message_your_colleagues3">message your colleagues</string>
+    <string name="open_faq">open faq</string>
+    <string name="about">We are a world leader in the rapidly changing environment of communications technology – by providing hardware, software, and services to enable the full value of connectivity. Founded: 1876. Global headquarters: Stockholm, Sweden. President and CEO: Börje Ekholm. Chairman of The Board: Ronnie Leten. Net sales, Q1 2023: SEK 62.6 billion. EBIT, Q1 2023: SEK 3.0 billion. Listed: Nasdaq Stockholm and on NASDAQ in New York. Number of employees worldwide. South East Asia, Oceania and India: 27,981. North East Asia: 13,136. North America: 11,765. Europe and Latin America: 47,500*. Middle East and Africa: 4,549. Total 104,931. * of which Sweden: 14,384. (numbers from the latest interim report Q1 2023). Gender breakdown (Dec 31, 2022): Female 26% Male 74%.</string>
 </resources>
