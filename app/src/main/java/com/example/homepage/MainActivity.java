@@ -12,8 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton button;
-    Button logout;
+    ImageButton chatbutton;
+    Button logoutBtn;
     ImageButton map;
 
     ImageButton faq;
@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = findViewById(R.id.chatbutton);
-        button.setOnClickListener(new View.OnClickListener() {
+        chatbutton = findViewById(R.id.chatbutton);
+        chatbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Chat.class);
@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        logout = findViewById(R.id.logoutBtn);
+        logoutBtn = findViewById(R.id.logoutBtn);
 
-        logout.setOnClickListener(new View.OnClickListener() {
+        logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putString("remember", "false");
                 editor.apply();
+                finish();
                 Intent intent = new Intent(MainActivity.this, Login.class);
                 startActivity(intent);
             }
