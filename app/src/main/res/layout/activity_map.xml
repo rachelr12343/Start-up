@@ -197,4 +197,26 @@
         app:strokeColor="#03A9F4"
         tools:ignore="TextContrastCheck" />
 
+    <Button
+        android:id="@+id/buttonBroc"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="548dp"
+        android:backgroundTint="#FEFEFE"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageBroggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_map"
+        app:srcCompat="@drawable/broggly" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

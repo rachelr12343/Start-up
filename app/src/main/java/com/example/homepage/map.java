@@ -3,6 +3,7 @@ package com.example.homepage;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -22,8 +23,9 @@ public class map extends AppCompatActivity {
     ImageButton printbtn;
     ImageButton quietbtn;
     ImageButton coffeebtn;
-
+    Button funbtn;
     ImageButton stairsbtn;
+    ImageView funImg;
 
     Button firstFloor;
 
@@ -49,6 +51,8 @@ public class map extends AppCompatActivity {
         quietbtn = findViewById(R.id.quietbtn);
         coffeebtn = findViewById(R.id.coffeebtn);
         stairsbtn = findViewById(R.id.stairsbtn);
+        funbtn = findViewById(R.id.buttonBroc);
+        funImg = findViewById(R.id.imageBroggle);
 
         toiletbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,6 +94,22 @@ public class map extends AppCompatActivity {
         public void onClick(View v) {
             openFirstFloor();
         }
+        });
+        funbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (funImg.getVisibility() == View.VISIBLE)
+                    funImg.setVisibility(View.GONE);
+                else {
+                    Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        public void run() {
+                            funImg.setVisibility(View.GONE);
+                        }
+                    }, 1000);
+                    funImg.setVisibility(View.VISIBLE);
+                }
+            }
         });
     }
 
