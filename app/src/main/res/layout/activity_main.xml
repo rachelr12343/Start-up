@@ -282,8 +282,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="346dp"
                 android:text="@string/about"
-                tools:ignore="VisualLintLongText">
-            </TextView>
+                tools:ignore="VisualLintLongText"></TextView>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
