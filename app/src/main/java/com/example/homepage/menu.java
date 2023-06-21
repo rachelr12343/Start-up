@@ -2,6 +2,7 @@ package com.example.homepage;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -47,6 +48,10 @@ public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClick
             int itemId = item.getItemId();
             if (itemId == R.id.item1) {
                 Toast.makeText(this, "Login / Register selected", Toast.LENGTH_SHORT).show();
+                SharedPreferences preferences = getSharedPreferences("checkbox", MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("remember", "false");
+                editor.apply();
                 Intent intent = new Intent(menu.this, Login.class);
                 startActivity(intent);
                 return true;

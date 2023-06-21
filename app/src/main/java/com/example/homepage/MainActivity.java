@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putString("remember", "false");
                 editor.apply();
-                finish();
                 Intent intent = new Intent(MainActivity.this, Login.class);
                 startActivity(intent);
             }
