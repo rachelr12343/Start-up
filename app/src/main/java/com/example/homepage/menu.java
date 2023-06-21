@@ -12,10 +12,11 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.PopupMenu;
 
 import java.util.Map;
 
-public class menu extends AppCompatActivity {
+public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
     ImageButton logo;
 
     @Override
@@ -54,14 +55,14 @@ public class menu extends AppCompatActivity {
         }
 
         @Override
-        public boolean onOptionsItemSelected (@NonNull MenuItem item){
+        public boolean onMenuItemClick (@NonNull MenuItem item){
             int itemId = item.getItemId();
             if (itemId == R.id.item1) {
                 Toast.makeText(this, "Login / Register selected", Toast.LENGTH_SHORT).show();
                 return true;
             } else if (itemId == R.id.item2) {
                 Toast.makeText(this, "Map selected", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(menu.this, Map.class);
+                Intent intent = new Intent(menu.this, map.class);
                 startActivity(intent);
             } else if (itemId == R.id.item3) {
                 Toast.makeText(this, "Chat selected", Toast.LENGTH_SHORT).show();
@@ -69,12 +70,22 @@ public class menu extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             } else if (itemId == R.id.item4) {
-                Toast.makeText(this, "Canteen Menu selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "FAQ selected", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(menu.this, FAQ.class);
+                startActivity(intent);
                 return true;
             }
             return super.onOptionsItemSelected(item);
 
         }
+
+    public void showPopup(View v) {
+        PopupMenu popup = new PopupMenu(this, v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_menu);
+        popup.show();
+
     }
+}
 
 
