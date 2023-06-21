@@ -95,10 +95,11 @@
             android:layout_width="65dp"
             android:layout_height="64dp"
             android:layout_marginLeft="40dp"
+            android:background="#6ACAD6"
             android:padding="1dp"
             android:src="@android:drawable/stat_notify_chat"
             android:text="open chat"
-            tools:ignore="OnClick" />
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
@@ -145,13 +146,14 @@
 
         <ImageButton
             android:id="@+id/menubutton"
-            android:layout_width="65dp"
-            android:layout_height="64dp"
+            android:layout_width="62dp"
+            android:layout_height="60dp"
             android:layout_marginLeft="40dp"
+            android:background="#6ACAD6"
             android:padding="1dp"
             android:src="@android:drawable/ic_dialog_info"
             android:text="open menu"
-            tools:ignore="OnClick" />
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
 
 
     </LinearLayout>
@@ -202,10 +204,11 @@
             android:layout_width="65dp"
             android:layout_height="64dp"
             android:layout_marginLeft="40dp"
+            android:background="#6ACAD6"
             android:padding="1dp"
             android:src="@android:drawable/ic_dialog_map"
             android:text="open map"
-            tools:ignore="OnClick" />
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
 
 
     </LinearLayout>
@@ -255,10 +258,11 @@
             android:layout_width="65dp"
             android:layout_height="64dp"
             android:layout_marginLeft="40dp"
+            android:background="#6ACAD6"
             android:padding="1dp"
             android:src="@android:drawable/ic_dialog_info"
             android:text="open faq"
-            tools:ignore="OnClick" />
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
 
 
     </LinearLayout>
