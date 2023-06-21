@@ -1,26 +1,19 @@
 package com.example.homepage;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
-import android.view.Gravity;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ScrollView;
-import android.widget.TextView;
 
-import java.util.Random;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton button;
-    Button logout;
+    ImageButton chatbutton;
+    Button logoutBtn;
     ImageButton map;
 
     ImageButton faq;
@@ -32,11 +25,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (ImageButton) findViewById(R.id.chatbutton);
-        button.setOnClickListener(new View.OnClickListener() {
+        chatbutton = findViewById(R.id.chatbutton);
+        chatbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openNewActivity();
+                Intent intent = new Intent(MainActivity.this, Chat.class);
+                startActivity(intent);            }
+
+            private void openNewActivity() {
             }
         });
 
@@ -67,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        logout = findViewById(R.id.logoutBtn);
+        logoutBtn = findViewById(R.id.logoutBtn);
 
-        logout.setOnClickListener(new View.OnClickListener() {
+        logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -78,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
                 editor.putString("remember", "false");
                 editor.apply();
                 finish();
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                startActivity(intent);
             }
         });
 
@@ -85,13 +83,8 @@ public class MainActivity extends AppCompatActivity {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, com.example.homepage.map.class));
+                startActivity(new Intent(MainActivity.this, map.class));
             }
         });
-
-    }
-    public void openNewActivity(){
-        Intent intent = new Intent(MainActivity.this, Chat.class);
-        startActivity(intent);
     }
 }

@@ -101,12 +101,8 @@ public class map extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.bottom_navigation, menu);
+        inflater.inflate(R.menu.example_menu, menu);
         return true;
-    }
-
-    private void setSupportActionBar() {
-
     }
 }
 

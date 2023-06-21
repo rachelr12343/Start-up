@@ -9,7 +9,7 @@
     <string name="chat">Chat</string>
     <string name="logo">Logo</string>
     <string name="todo">TODO</string>
-    <string name="map_of_ericsson_athlone">  Map of Ericsson Athlone</string>
+    <string name="map_of_ericsson_athlone">   Map of Ericsson Athlone</string>
     <string name="canteen_menu">Canteen Menu</string>
     <string name="layout">TODO</string>
     <string name="chat_function">Chat function</string>
@@ -28,4 +28,39 @@
     <string name="first_floor">First Floor</string>
     <string name="home_page">Home Page</string>
     <string name="logout">Logout</string>
+    <string name="about_company"><![CDATA[
+        <p><b>We are a world leader</b> in the rapidly changing environment <br/>of communications technology – by providing <br/>hardware, software, and services to enable the full value of connectivity.</p><br/>
+
+        <p><b>Founded:</b> 1876.<br/>
+        <b>Parent company:</b> Telefonaktiebolaget LM Ericsson (publ).<br/>
+        <b>Company registration number:</b> 556016-0680.<br/>
+        <b>Global headquarters:</b> Stockholm, Sweden.<br/>
+        <b>President and CEO:</b> Börje Ekholm.<br/>
+        <b>Chairman of The Board:</b> Ronnie Leten.<br/>
+        <b>Net sales, Q1 2023:</b> SEK 62.6 billion.<br/>
+        <b>EBIT, Q1 2023:</b> SEK 3.0 billion.</p><br/>
+
+        <p><b>Net sales full year 2022:</b> SEK 271.5 billion.<br/>
+        <b>EBIT, Full year 2022:</b> SEK 27 billion.</p><br/>
+
+        <p><b>Listed:</b> Nasdaq Stockholm and on NASDAQ in New York.</p><br/>
+
+        <p><b>Number of employees worldwide:</b><br/></p>
+            <i>South East Asia, Oceania and India:</i> 27,981.<br/>
+            <i>North East Asia:</i> 13,136.<br/>
+            <i>North America:</i> 11,765.<br/>
+            <i>Europe and Latin America:</i> 47,500*.<br/>
+            <i>Middle East and Africa:</i> 4,549.<br/>
+
+        <p><b>Total:</b> 104,931.<br/></p>
+
+        <p>* of which Sweden: 14,384.<br/>
+        (numbers from the latest interim report Q1 2023).</p><br/>
+
+        <p><b>Gender breakdown (Dec 31, 2022):</b><br/></p>
+            Female 26%<br/>
+            Male 74%.
+    ]]></string>
+    <string name="menu">Menu</string>
+    <string name="toolbar_chat">             Chat</string>
 </resources>
