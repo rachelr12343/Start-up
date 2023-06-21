@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     ImageButton chatbutton;
     Button logoutBtn;
     ImageButton map;
-
     ImageButton faq;
     ImageButton menu;
 
