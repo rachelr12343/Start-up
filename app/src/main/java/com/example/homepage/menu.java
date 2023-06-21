@@ -15,8 +15,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.PopupMenu;
 
-import java.util.Map;
-
 public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
     ImageButton logo;
 
@@ -38,22 +36,11 @@ public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClick
             }
         });
     }
-
-    public void openMainActivity() {
-        Intent intent = new Intent(menu.this, MainActivity.class);
-        startActivity(intent);
-    }
-
         @Override
         public boolean onCreateOptionsMenu (Menu menu){
             MenuInflater inflater = getMenuInflater();
             inflater.inflate(R.menu.example_menu, menu);
             return true;
-        }
-
-        public void openNewActivity () {
-            Intent intent = new Intent(menu.this, Chat.class);
-            startActivity(intent);
         }
 
         @Override
