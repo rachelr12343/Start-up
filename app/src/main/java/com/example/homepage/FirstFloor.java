@@ -9,9 +9,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import com.example.homepage.MainActivity;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -34,8 +31,6 @@ public class FirstFloor extends AppCompatActivity {
     protected void onCreate (@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_floor);
-
-        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar();
 
         logo = (ImageButton) findViewById(R.id.logo);

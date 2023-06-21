@@ -9,17 +9,16 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Chat extends AppCompatActivity {
 
     private EditText messageEditText;
-    private Button sendButton;
     private TextView chatTextView;
     ImageButton logo;
 
     private StringBuilder chatHistory;
-    ImageButton homeButton;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -28,7 +27,7 @@ public class Chat extends AppCompatActivity {
         setContentView(R.layout.activity_chat);
 
         messageEditText = findViewById(R.id.message_edit_text);
-        sendButton = findViewById(R.id.send_button);
+        Button sendButton = findViewById(R.id.send_button);
         chatTextView = findViewById(R.id.chat_text_view);
         chatHistory = new StringBuilder();
 
@@ -70,7 +69,7 @@ public class Chat extends AppCompatActivity {
         chatHistory.append("You: ").append(message).append("\n");
 
         // Simulating the other user's response
-        String response = generateResponse(message);
+        String response = generateResponse();
         newChat = chatTextView.getText().toString() + "\nOther User: " + response;
         chatTextView.setText(newChat);
 
@@ -80,17 +79,14 @@ public class Chat extends AppCompatActivity {
         messageEditText.getText().clear();
     }
 
-    private String generateResponse(String message) {
+    private String generateResponse() {
         // Replace this with your logic to generate the chatbot's response
         return "ug ug ug ug ug " /*+ message*/;
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString("chatHistory", chatHistory.toString());
     }
-    public void openMainActivity(){
-        Intent intent = new Intent(Chat.this, MainActivity.class);
-        startActivity(intent);
-}}
+}

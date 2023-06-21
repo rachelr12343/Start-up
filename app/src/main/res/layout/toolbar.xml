@@ -12,9 +12,11 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:background="@color/blue"
-        android:contentDescription="TODO"
         android:src="@drawable/ericsson_logo"
         android:title="@string/logo"
-        app:showAsAction="ifRoom"></ImageButton>
+        app:showAsAction="ifRoom"
+        tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck">
+
+    </ImageButton>
 
 </androidx.appcompat.widget.Toolbar>
