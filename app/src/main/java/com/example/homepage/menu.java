@@ -14,8 +14,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.PopupMenu;
 
-import java.util.Map;
-
 public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
     ImageButton logo;
 
@@ -37,12 +35,6 @@ public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClick
             }
         });
     }
-
-    public void openMainActivity() {
-        Intent intent = new Intent(menu.this, MainActivity.class);
-        startActivity(intent);
-    }
-
         @Override
         public boolean onCreateOptionsMenu (Menu menu){
             MenuInflater inflater = getMenuInflater();
@@ -50,16 +42,13 @@ public class menu extends AppCompatActivity implements PopupMenu.OnMenuItemClick
             return true;
         }
 
-        public void openNewActivity () {
-            Intent intent = new Intent(menu.this, Chat.class);
-            startActivity(intent);
-        }
-
         @Override
         public boolean onMenuItemClick (@NonNull MenuItem item){
             int itemId = item.getItemId();
             if (itemId == R.id.item1) {
                 Toast.makeText(this, "Login / Register selected", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(menu.this, Login.class);
+                startActivity(intent);
                 return true;
             } else if (itemId == R.id.item2) {
                 Toast.makeText(this, "Map selected", Toast.LENGTH_SHORT).show();
