@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class FAQ extends AppCompatActivity {
@@ -21,6 +22,8 @@ public class FAQ extends AppCompatActivity {
     Button questionFour;
     TextView answerFour;
     ImageButton homeBtn;
+    Button buttonMan;
+    ImageView imageMan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,8 @@ public class FAQ extends AppCompatActivity {
         questionFour = findViewById(R.id.button4);
         answerFour = findViewById(R.id.answer4);
         homeBtn = findViewById(R.id.FAQimageBtn);
+        buttonMan = findViewById(R.id.buttonOran);
+        imageMan = findViewById(R.id.imageOran);
 
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,6 +117,24 @@ public class FAQ extends AppCompatActivity {
                 }
             }
         });
+
+        buttonMan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (imageMan.getVisibility() == View.VISIBLE)
+                    imageMan.setVisibility(View.GONE);
+                else {
+                    Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        public void run() {
+                            imageMan.setVisibility(View.GONE);
+                        }
+                    }, 1000);
+                    imageMan.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
     }
 
     public void openMainActivity(){
