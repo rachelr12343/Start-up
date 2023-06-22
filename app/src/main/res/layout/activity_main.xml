@@ -1,290 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#0A53CF"
-        tools:ignore="VisualLintBottomNav">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/logoutBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:backgroundTint="#0A53CE"
-            android:text="@string/logout_text" />
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="82dp"
-        android:background="#3F51B5"
-        android:orientation="vertical"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="11dp"
-            android:layout_marginStart="20sp"
-            android:fontFamily="sans-serif-black"
-            android:gravity="center"
-            android:text="@string/start_up"
-            android:textColor="#F4E9E9"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:text="@string/ericsson_for_beginners"
-            android:textColor="#EAD9D9"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="85dp"
-        android:background="#6ACAD6"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="3dp"
-        tools:ignore="TextSizeCheck">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/chat_text"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                tools:ignore="TextContrastCheck" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:text="@string/message_your_colleagues"
-                android:textColor="#6ACAD6"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <ImageButton
-            android:id="@+id/chatbutton"
-            android:layout_width="65dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="40dp"
-            android:background="#6ACAD6"
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="289dp"
+            android:layout_height="153dp"
             android:importantForAccessibility="no"
-            android:padding="1dp"
-            android:src="@android:drawable/stat_notify_chat"
-            android:text="@string/open_chat"
-            tools:ignore="OnClick,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="150dp"
-        android:background="#6ACAD6"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="3dp"
-        tools:ignore="TextSizeCheck">
+            android:src="@drawable/ericssonpic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.185" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/menu_text"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                tools:ignore="TextContrastCheck" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:text="@string/message_your_colleagues_text"
-                android:textColor="#6ACAD6"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <ImageButton
-            android:id="@+id/menubutton"
-            android:layout_width="62dp"
+            android:layout_width="110dp"
             android:layout_height="60dp"
-            android:layout_marginStart="40dp"
+            android:layout_marginTop="-300dp"
             android:background="#6ACAD6"
-            android:importantForAccessibility="no"
-            android:padding="1dp"
-            android:src="@android:drawable/ic_dialog_info"
-            android:text="@string/open_menu"
-            tools:ignore="OnClick,SpeakableTextPresentCheck,ImageContrastCheck" />
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            app:layout_constraintVertical_bias="0.457"
+            tools:ignore="TextSizeCheck">
 
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="215dp"
-        android:background="#6ACAD6"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="3dp"
-        tools:ignore="TextSizeCheck">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/map_text"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                tools:ignore="TextContrastCheck" />
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:text="@string/message_your_colleagues1"
-                android:textColor="#6ACAD6"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/faq_text"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/mapButton"
-            android:layout_width="65dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="40dp"
-            android:background="#6ACAD6"
-            android:importantForAccessibility="no"
-            android:padding="1dp"
-            android:src="@android:drawable/ic_dialog_map"
-            android:text="@string/open_map"
-            tools:ignore="OnClick,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="280dp"
-        android:background="#6ACAD6"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="3dp"
-        tools:ignore="TextSizeCheck">
-
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:id="@+id/linearLayout5"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-217dp"
+            android:background="#6ACAD6"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.342"
+            tools:ignore="TextSizeCheck">
 
-
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/faq_text"
-                android:textColor="@color/cardview_light_background"
-                android:textSize="23sp"
-                android:textStyle="bold"
-                tools:ignore="TextContrastCheck" />
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:text="@string/message_your_colleagues3"
-                android:textColor="#6ACAD6"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/map_text"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/faqButton"
-            android:layout_width="65dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="40dp"
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-140dp"
             android:background="#6ACAD6"
-            android:importantForAccessibility="no"
-            android:padding="1dp"
-            android:src="@android:drawable/ic_dialog_info"
-            android:text="@string/open_faq"
-            tools:ignore="OnClick,SpeakableTextPresentCheck,ImageContrastCheck,VisualLintBounds" />
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintVertical_bias="0.231"
+            tools:ignore="TextSizeCheck">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/menu_text"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
 
-    <ImageView
-        android:layout_width="900dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="350dp"
-        android:src="@drawable/ericssonpic"
-        android:importantForAccessibility="no" />
+            </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="510dp"
-        android:scrollbars="vertical">
+
+        </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:background="#6ACAD6"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.141"
+            tools:ignore="TextSizeCheck">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/chat_text"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="82dp"
+            android:background="#3F51B5"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="11dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="@string/start_up"
+                android:textColor="#F4E9E9"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="346dp"
-                android:text="@string/about"
-                tools:ignore="VisualLintLongText"></TextView>
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/ericsson_for_beginners"
+                android:textColor="#EAD9D9"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
         </LinearLayout>
-    </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0A53CF"
+            tools:ignore="VisualLintBottomNav"
+            tools:layout_editor_absoluteY="651dp">
+
+            <Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#0A53CE"
+                android:text="@string/logout_text" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="279dp"
+            android:layout_height="349dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="268dp"
+            android:text="@string/about"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="VisualLintLongText"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </RelativeLayout>
