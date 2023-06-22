@@ -70,10 +70,10 @@ public class Chat extends AppCompatActivity {
 
         // Simulating the other user's response
         String response = generateResponse();
-        newChat = chatTextView.getText().toString() + "\nOther User: " + response;
+        newChat = chatTextView.getText().toString() + "\nRachel: " + response;
         chatTextView.setText(newChat);
 
-        chatHistory.append("Other User: ").append(response).append("\n");
+        chatHistory.append("Rachel: ").append(response).append("\n");
 
         // Clear the message EditText
         messageEditText.getText().clear();

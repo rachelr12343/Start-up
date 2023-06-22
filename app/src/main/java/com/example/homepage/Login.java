@@ -115,7 +115,7 @@ public class Login extends AppCompatActivity {
                         public void run() {
                             image.setVisibility(View.GONE);
                         }
-                    }, 200);
+                    }, 1000);
                     image.setVisibility(View.VISIBLE);
                 }
             }
@@ -132,7 +132,7 @@ public class Login extends AppCompatActivity {
                         public void run() {
                             spongeImage.setVisibility(View.GONE);
                         }
-                    }, 200);
+                    }, 1000);
                     spongeImage.setVisibility(View.VISIBLE);
                 }
             }
