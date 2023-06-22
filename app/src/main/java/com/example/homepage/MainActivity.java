@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton chatbutton;
+    ImageButton chatButton;
     Button logoutBtn;
     ImageButton map;
     ImageButton faq;
@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        chatbutton = findViewById(R.id.chatbutton);
-        chatbutton.setOnClickListener(new View.OnClickListener() {
+        chatButton = findViewById(R.id.chatbutton);
+        chatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Chat.class);
