@@ -6,31 +6,32 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton chatButton;
+    LinearLayout chat;
     Button logoutBtn;
-    ImageButton map;
-    ImageButton faq;
-    ImageButton menu;
+    LinearLayout map;
+    LinearLayout faq;
+    LinearLayout menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        chatButton = findViewById(R.id.chatbutton);
-        chatButton.setOnClickListener(new View.OnClickListener() {
+        chat = findViewById(R.id.chatButton);
+        chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Chat.class);
                 startActivity(intent);            }
         });
 
-        map = (ImageButton) findViewById(R.id.mapButton);
+        map = findViewById(R.id.mapButton);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        menu = (ImageButton) findViewById(R.id.menubutton);
+        menu = findViewById(R.id.menuButton);
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        faq = (ImageButton) findViewById(R.id.faqButton);
+        faq = findViewById(R.id.faqButton);
         faq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton map = (ImageButton)findViewById(R.id.mapButton);
+        ImageButton map = (ImageButton)findViewById(R.id.imageButton3);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

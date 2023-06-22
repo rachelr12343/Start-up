@@ -12,8 +12,8 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="289dp"
-            android:layout_height="153dp"
+            android:layout_width="290dp"
+            android:layout_height="157dp"
             android:importantForAccessibility="no"
             android:src="@drawable/ericssonpic"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -22,118 +22,119 @@
             app:layout_constraintVertical_bias="0.185" />
 
         <LinearLayout
-            android:layout_width="110dp"
+            android:id="@+id/faqButton"
+            android:layout_width="100dp"
             android:layout_height="60dp"
-            android:layout_marginTop="-300dp"
+            android:layout_marginTop="-296dp"
             android:background="#6ACAD6"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            app:layout_constraintTop_toBottomOf="@+id/mapButton"
             app:layout_constraintVertical_bias="0.457"
             tools:ignore="TextSizeCheck">
 
-            <LinearLayout
+            <ImageButton
+                android:id="@+id/imageButton4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="#6AC9D5"
+                app:srcCompat="@android:drawable/ic_dialog_info" />
 
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/faq_text"
-                    android:textColor="@color/cardview_light_background"
-                    android:textSize="23sp"
-                    android:textStyle="bold"
-                    tools:ignore="TextContrastCheck" />
-
-            </LinearLayout>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/faq_text"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
 
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout5"
-            android:layout_width="110dp"
+            android:id="@+id/mapButton"
+            android:layout_width="100dp"
             android:layout_height="60dp"
-            android:layout_marginTop="-217dp"
+            android:layout_marginTop="-216dp"
             android:background="#6ACAD6"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/menuButton"
             app:layout_constraintVertical_bias="0.342"
             tools:ignore="TextSizeCheck">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="22dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:backgroundTint="#6AC9D5"
+                app:srcCompat="@android:drawable/ic_dialog_map" />
 
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/map_text"
-                    android:textColor="@color/cardview_light_background"
-                    android:textSize="23sp"
-                    android:textStyle="bold"
-                    tools:ignore="TextContrastCheck" />
-
-            </LinearLayout>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/map_text"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
 
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="110dp"
+            android:id="@+id/menuButton"
+            android:layout_width="100dp"
             android:layout_height="60dp"
-            android:layout_marginTop="-140dp"
+            android:layout_marginTop="-142dp"
             android:background="#6ACAD6"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/chatButton"
             app:layout_constraintVertical_bias="0.231"
             tools:ignore="TextSizeCheck">
 
-            <LinearLayout
+            <ImageButton
+                android:id="@+id/imageButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_weight="1"
+                android:backgroundTint="#6AC9D5"
+                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
 
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/menu_text"
-                    android:textColor="@color/cardview_light_background"
-                    android:textSize="23sp"
-                    android:textStyle="bold"
-                    tools:ignore="TextContrastCheck" />
-
-            </LinearLayout>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/menu_text"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
 
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="110dp"
+            android:id="@+id/chatButton"
+            android:layout_width="100dp"
             android:layout_height="60dp"
             android:background="#6ACAD6"
             android:gravity="center"
@@ -145,24 +146,24 @@
             app:layout_constraintVertical_bias="0.141"
             tools:ignore="TextSizeCheck">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="#6AC9D5"
+                app:srcCompat="@android:drawable/stat_notify_chat" />
 
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/chat_text"
-                    android:textColor="@color/cardview_light_background"
-                    android:textSize="23sp"
-                    android:textStyle="bold"
-                    tools:ignore="TextContrastCheck" />
-
-            </LinearLayout>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/chat_text"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
 
         </LinearLayout>
 
@@ -172,7 +173,10 @@
             android:layout_height="82dp"
             android:background="#3F51B5"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -201,8 +205,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#0A53CF"
-            tools:ignore="VisualLintBottomNav"
-            tools:layout_editor_absoluteY="651dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="VisualLintBottomNav">
 
             <Button
                 android:id="@+id/logoutBtn"
@@ -219,10 +225,10 @@
             android:layout_width="279dp"
             android:layout_height="349dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="268dp"
+            android:layout_marginTop="280dp"
             android:text="@string/about"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.016"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="VisualLintLongText"></TextView>
