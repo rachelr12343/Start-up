@@ -17,7 +17,6 @@ public class Chat extends AppCompatActivity {
     private EditText messageEditText;
     private TextView chatTextView;
     ImageButton logo;
-
     private StringBuilder chatHistory;
 
     @SuppressLint("MissingInflatedId")
@@ -30,10 +29,7 @@ public class Chat extends AppCompatActivity {
         Button sendButton = findViewById(R.id.send_button);
         chatTextView = findViewById(R.id.chat_text_view);
         chatHistory = new StringBuilder();
-
-        logo = (ImageButton)
-
-                findViewById(R.id.logo);
+        logo = (ImageButton) findViewById(R.id.logo);
 
         logo.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ClickableViewAccessibility")
@@ -69,19 +65,19 @@ public class Chat extends AppCompatActivity {
         chatHistory.append("You: ").append(message).append("\n");
 
         // Simulating the other user's response
-        String response = generateResponse();
-        newChat = chatTextView.getText().toString() + "\nRachel: " + response;
+        String response = generateResponse(message);
+        newChat = chatTextView.getText().toString() + "\nOther User: " + response;
         chatTextView.setText(newChat);
 
-        chatHistory.append("Rachel: ").append(response).append("\n");
+        chatHistory.append("Other User: ").append(response).append("\n");
 
         // Clear the message EditText
         messageEditText.getText().clear();
     }
 
-    private String generateResponse() {
+    private String generateResponse(String message) {
         // Replace this with your logic to generate the chatbot's response
-        return "Hello" /*+ message*/;
+        return "This is the chatbot's response to: " + message;
     }
 
     @Override
