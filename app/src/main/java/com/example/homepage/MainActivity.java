@@ -1,6 +1,5 @@
 package com.example.homepage;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -18,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     ImageButton faq;
     ImageButton menu;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
