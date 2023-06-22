@@ -16,6 +16,7 @@
             android:id="@+id/logoutBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:backgroundTint="#0A53CE"
             android:text="@string/logout_text" />
 
@@ -31,6 +32,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
             android:layout_marginStart="20sp"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
