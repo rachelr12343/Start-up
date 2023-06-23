@@ -22,11 +22,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.801" />
 
+        Do not edit, it looks fine when app is running!
         <LinearLayout
             android:id="@+id/faqButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-485dp"
+            android:layout_marginTop="-510dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -60,18 +61,19 @@
 
         </LinearLayout>
 
+        Do not edit this, it looks fine when app is running!
         <LinearLayout
             android:id="@+id/mapButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="-1dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.096"
+            app:layout_constraintHorizontal_bias="0.099"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.123"
@@ -99,11 +101,12 @@
 
         </LinearLayout>
 
+        Do not edit this, it looks fine when app is running!
         <LinearLayout
             android:id="@+id/menuButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-140dp"
+            android:layout_marginTop="-150dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -138,18 +141,19 @@
 
         </LinearLayout>
 
+        Do not edit this, it looks fine when app is running!
         <LinearLayout
             android:id="@+id/chatButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="-1dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.346"
+            app:layout_constraintHorizontal_bias="0.357"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.123"
