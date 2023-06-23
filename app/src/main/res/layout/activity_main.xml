@@ -10,19 +10,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        Do not edit, it looks fine when app is running!
+
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="311dp"
             android:layout_height="167dp"
-            android:layout_marginStart="56dp"
+            android:layout_marginStart="48dp"
             android:importantForAccessibility="no"
             android:src="@drawable/ericssonpic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.801" />
+            app:layout_constraintVertical_bias="0.773" />
 
-        Do not edit, it looks fine when app is running!
         <LinearLayout
             android:id="@+id/faqButton"
             android:layout_width="70dp"
@@ -259,6 +260,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/oran_s_face" />
+
+        <Button
+            android:id="@+id/guideBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Guide to your First Day"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.882" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

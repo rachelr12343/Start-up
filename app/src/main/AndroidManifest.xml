@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Homepage"
         tools:targetApi="31">
         <activity
+            android:name=".firstDay"
+            android:exported="false" />
+        <activity
             android:name=".FAQ"
             android:exported="false" />
         <activity
@@ -36,7 +39,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FirstFloor"/>
+        <activity android:name=".FirstFloor" />
     </application>
 
 </manifest>

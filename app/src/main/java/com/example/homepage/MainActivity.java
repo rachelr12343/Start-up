@@ -20,11 +20,21 @@ public class MainActivity extends AppCompatActivity{
     LinearLayout menu;
     Button oranBtn;
     ImageView oranPic;
+    Button firstDayBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        firstDayBtn = findViewById(R.id.guideBtn);
+        firstDayBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, firstDay.class);
+                startActivity(intent);
+            }
+        });
 
         chat = findViewById(R.id.chatButton);
         chat.setOnClickListener(new View.OnClickListener() {
