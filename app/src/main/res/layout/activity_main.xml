@@ -171,7 +171,7 @@
             android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
             android:layout_height="82dp"
-            android:background="#3F51B5"
+            android:background="#0A53CF"
             android:orientation="vertical"
             android:padding="5dp"
             app:layout_constraintEnd_toEndOf="parent"
