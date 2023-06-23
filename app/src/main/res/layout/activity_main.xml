@@ -26,7 +26,7 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_marginTop="-296dp"
-            android:background="#6ACAD6"
+            android:background="@color/blue"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="3dp"
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:backgroundTint="#6AC9D5"
+                android:backgroundTint="@color/blue"
                 app:srcCompat="@android:drawable/ic_dialog_info" />
 
             <TextView
@@ -63,7 +63,7 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_marginTop="-216dp"
-            android:background="#6ACAD6"
+            android:background="@color/blue"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="3dp"
@@ -78,7 +78,7 @@
                 android:layout_width="22dp"
                 android:layout_height="41dp"
                 android:layout_weight="1"
-                android:backgroundTint="#6AC9D5"
+                android:backgroundTint="@color/blue"
                 app:srcCompat="@android:drawable/ic_dialog_map" />
 
             <TextView
@@ -100,7 +100,7 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_marginTop="-142dp"
-            android:background="#6ACAD6"
+            android:background="@color/blue"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="3dp"
@@ -115,7 +115,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="#6AC9D5"
+                android:backgroundTint="@color/blue"
                 app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
 
             <TextView
@@ -136,7 +136,7 @@
             android:id="@+id/chatButton"
             android:layout_width="100dp"
             android:layout_height="60dp"
-            android:background="#6ACAD6"
+            android:background="@color/blue"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="3dp"
@@ -151,7 +151,7 @@
                 android:layout_width="100dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:backgroundTint="#6AC9D5"
+                android:backgroundTint="@color/blue"
                 app:srcCompat="@android:drawable/stat_notify_chat" />
 
             <TextView
