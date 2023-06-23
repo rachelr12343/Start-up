@@ -3,9 +3,11 @@ package com.example.homepage;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +18,8 @@ public class MainActivity extends AppCompatActivity{
     LinearLayout map;
     LinearLayout faq;
     LinearLayout menu;
+    Button oranBtn;
+    ImageView oranPic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,5 +83,25 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(new Intent(MainActivity.this, map.class));
             }
         });
+
+        oranBtn = findViewById(R.id.oranFaceBtn);
+        oranPic = findViewById(R.id.oranFaceImage);
+        oranBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (oranPic.getVisibility() == View.VISIBLE)
+                    oranPic.setVisibility(View.GONE);
+                else {
+                    Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        public void run() {
+                            oranPic.setVisibility(View.GONE);
+                        }
+                    }, 1000);
+                    oranPic.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
     }
 }

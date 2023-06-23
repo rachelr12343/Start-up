@@ -26,6 +26,7 @@
             android:id="@+id/faqButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
+            android:layout_marginTop="-485dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -35,7 +36,6 @@
             app:layout_constraintHorizontal_bias="0.87"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.123"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -64,6 +64,7 @@
             android:id="@+id/mapButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
+            android:layout_marginTop="2dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -102,7 +103,7 @@
             android:id="@+id/menuButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-142dp"
+            android:layout_marginTop="-140dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -141,6 +142,7 @@
             android:id="@+id/chatButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
+            android:layout_marginTop="2dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -185,11 +187,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/oranFaceBtn"
+                android:layout_width="143dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20sp"
+                android:layout_marginStart="-11dp"
                 android:layout_marginTop="11dp"
+                android:backgroundTint="#0A53CE"
                 android:fontFamily="sans-serif-black"
                 android:gravity="center"
                 android:text="@string/start_up"
@@ -200,6 +204,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="-10dp"
                 android:text="@string/ericsson_for_beginners"
                 android:textColor="#EAD9D9"
                 android:textSize="15sp"
@@ -239,6 +244,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="VisualLintLongText"></TextView>
+
+        <ImageView
+            android:id="@+id/oranFaceImage"
+            android:layout_width="412dp"
+            android:layout_height="738dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/oran_s_face" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
