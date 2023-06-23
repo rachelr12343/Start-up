@@ -28,7 +28,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="30dp"
         android:text="@string/map_of_ericsson_athlone"
-        android:textColor="@color/white"
+        android:textColor="#00235E"
         android:textSize="26sp"
         tools:ignore="TextContrastCheck" />
 
