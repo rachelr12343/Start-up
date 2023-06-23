@@ -134,7 +134,6 @@ public class FAQ extends AppCompatActivity {
                 }
             }
         });
-        return false;
     }
 
     public void openMainActivity(){

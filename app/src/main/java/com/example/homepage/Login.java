@@ -72,7 +72,6 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        return false;
     }
 
     public boolean isValidEmail(String email) {

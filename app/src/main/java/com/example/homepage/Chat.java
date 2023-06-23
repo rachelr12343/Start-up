@@ -55,7 +55,6 @@ public class Chat extends AppCompatActivity {
                 chatTextView.setText(chatHistory.toString());
             }
         }
-        return false;
     }
 
     private void sendMessage(String message) {
