@@ -111,6 +111,7 @@ public class map extends AppCompatActivity {
                 }
             }
         });
+        return false;
     }
 
     public void openFirstFloor() {
