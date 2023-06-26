@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        Do not edit, it looks fine when app is running!
+
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="311dp"
@@ -23,6 +25,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.773" />
 
+        Do not edit this, it looks fine when app is running!
+
         <LinearLayout
             android:id="@+id/faqButton"
             android:layout_width="70dp"
@@ -34,9 +38,10 @@
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.87"
+            app:layout_constraintHorizontal_bias="0.885"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.509"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -50,10 +55,12 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageView
-                android:id="@+id/faqImage"
+            <ImageButton
+                android:id="@+id/imageButton4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue"
                 app:srcCompat="@android:drawable/ic_dialog_info" />
 
 
@@ -87,14 +94,21 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageView
-                android:id="@+id/mapImage"
-                android:layout_width="match_parent"
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_dialog_map" />
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue"
+                app:srcCompat="@android:drawable/ic_dialog_map"
+                android:importantForAccessibility="no" />
 
 
         </LinearLayout>
+
+        Do not edit this, it looks fine when app is running!
+
+        Do not edit this, it looks fine when app is running!
 
         <LinearLayout
             android:id="@+id/menuButton"
@@ -107,14 +121,14 @@
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintHorizontal_bias="0.624"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.281"
+            app:layout_constraintVertical_bias="0.287"
             tools:ignore="TextSizeCheck">
 
             <TextView
-                android:layout_width="86dp"
+                android:layout_width="88dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
@@ -124,11 +138,14 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageView
-                android:id="@+id/menuImage"
-                android:layout_width="match_parent"
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_menu_search" />
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue"
+                app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+                app:tint="@color/white" />
 
 
         </LinearLayout>
@@ -161,10 +178,12 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageView
-                android:id="@+id/chatImage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <ImageButton
+                android:id="@+id/chatBtn"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue"
                 app:srcCompat="@android:drawable/stat_notify_chat" />
 
         </LinearLayout>
