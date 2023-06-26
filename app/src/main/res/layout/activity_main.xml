@@ -11,8 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        Do not edit, it looks fine when app is running!
-
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="311dp"
@@ -52,20 +50,16 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageButton
-                android:id="@+id/imageButton4"
+            <ImageView
+                android:id="@+id/faqImage"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/blue"
+                android:layout_height="wrap_content"
                 app:srcCompat="@android:drawable/ic_dialog_info" />
 
 
         </LinearLayout>
 
-        Do not edit this, it looks fine when app is running!
-
-        <LinearLayout
+ <LinearLayout
             android:id="@+id/mapButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
@@ -93,18 +87,14 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/mapImage"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/blue"
                 app:srcCompat="@android:drawable/ic_dialog_map" />
 
 
         </LinearLayout>
-
-        Do not edit this, it looks fine when app is running!
 
         <LinearLayout
             android:id="@+id/menuButton"
@@ -134,20 +124,16 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/menuImage"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/blue"
-                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+                app:srcCompat="@android:drawable/ic_menu_search" />
 
 
         </LinearLayout>
 
-        Do not edit this, it looks fine when app is running!
-
-        <LinearLayout
+<LinearLayout
             android:id="@+id/chatButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
@@ -175,12 +161,10 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/blue"
+            <ImageView
+                android:id="@+id/chatImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 app:srcCompat="@android:drawable/stat_notify_chat" />
 
         </LinearLayout>
@@ -246,12 +230,13 @@
             android:layout_width="360dp"
             android:layout_height="258dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="176dp"
             android:text="@string/about"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.415"
+            app:layout_constraintHorizontal_bias="0.395"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.365"
             tools:ignore="VisualLintLongText"></TextView>
 
         <ImageView
@@ -269,8 +254,6 @@
             android:id="@+id/guideBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@color/blue"
-            android:backgroundTint="#F6F4F4"
             android:text="Guide to your First Day"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
