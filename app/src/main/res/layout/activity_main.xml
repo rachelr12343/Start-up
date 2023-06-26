@@ -9,19 +9,21 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/ericsson_buidling">
 
         <LinearLayout
             android:id="@+id/aboutUsBtn"
             android:layout_width="70dp"
             android:layout_height="82dp"
-            android:layout_marginEnd="240dp"
             android:background="@color/dark_blue"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.525">
+            app:layout_constraintVertical_bias="0.704">
 
             <TextView
                 android:id="@+id/textView9"
@@ -52,10 +54,10 @@
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.841"
+            app:layout_constraintHorizontal_bias="0.844"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.618"
+            app:layout_constraintVertical_bias="0.59"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -91,10 +93,10 @@
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintHorizontal_bias="0.844"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.167"
+            app:layout_constraintVertical_bias="0.699"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -134,7 +136,7 @@
             app:layout_constraintHorizontal_bias="0.155"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.31"
+            app:layout_constraintVertical_bias="0.261"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -216,7 +218,6 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
-
         <ImageView
             android:id="@+id/oranFaceImage"
             android:layout_width="412dp"
@@ -242,27 +243,15 @@
             app:layout_constraintVertical_bias="0.882" />
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="331dp"
-            android:layout_height="157dp"
+            android:id="@+id/imageView6"
+            android:layout_width="203dp"
+            android:layout_height="221dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.759"
-            app:srcCompat="@drawable/ericssonpic" />
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="164dp"
-            android:layout_height="141dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.338"
-            app:srcCompat="@drawable/start_up_logo" />
+            app:layout_constraintVertical_bias="0.462"
+            app:srcCompat="@drawable/startuplogo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
