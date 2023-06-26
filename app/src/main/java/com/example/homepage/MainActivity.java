@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity{
     Button logoutBtn;
     LinearLayout map;
     LinearLayout faq;
-    LinearLayout menu;
     Button oranBtn;
     ImageButton chatBtn;
     ImageButton faqBtn;
@@ -73,15 +72,6 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, map.class);
-                startActivity(intent);
-            }
-        });
-
-        menu = findViewById(R.id.menuButton);
-        menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, menu.class);
                 startActivity(intent);
             }
         });
