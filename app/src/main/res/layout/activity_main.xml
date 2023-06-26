@@ -21,7 +21,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.525">
+            app:layout_constraintVertical_bias="0.513">
 
             <TextView
                 android:id="@+id/textView9"
@@ -55,7 +55,7 @@
             app:layout_constraintHorizontal_bias="0.841"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.618"
+            app:layout_constraintVertical_bias="0.622"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -134,7 +134,7 @@
             app:layout_constraintHorizontal_bias="0.155"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.31"
+            app:layout_constraintVertical_bias="0.318"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -253,16 +253,12 @@
             app:srcCompat="@drawable/ericssonpic" />
 
         <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="164dp"
-            android:layout_height="141dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.338"
-            app:srcCompat="@drawable/start_up_logo" />
+            android:id="@+id/imageView6"
+            android:layout_width="123dp"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/start_up_logo"
+            tools:layout_editor_absoluteX="144dp"
+            tools:layout_editor_absoluteY="211dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
