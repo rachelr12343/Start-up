@@ -174,7 +174,6 @@
         android:id="@+id/groundFloor"
         android:layout_width="123dp"
         android:layout_height="56dp"
-        android:background="@color/blue"
         android:backgroundTint="@color/blue"
         android:backgroundTintMode="add"
         android:text="@string/ground_floor"

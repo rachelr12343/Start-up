@@ -1,5 +1,6 @@
 package com.example.homepage;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity{
     LinearLayout faq;
     LinearLayout menu;
     Button oranBtn;
+    ImageButton chatBtn;
+    ImageButton faqBtn;
     ImageView oranPic;
     Button firstDayBtn;
 
@@ -44,6 +47,16 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(intent);            }
         });
 
+        chatBtn = (ImageButton) findViewById(R.id.chatBtn);
+        chatBtn.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ClickableViewAccessibility")
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Chat.class);
+                startActivity(intent);
+            }
+        });
+
 
         map = findViewById(R.id.mapButton);
         map.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +78,16 @@ public class MainActivity extends AppCompatActivity{
 
         faq = findViewById(R.id.faqButton);
         faq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FAQ.class);
+                startActivity(intent);
+            }
+        });
+
+        faqBtn = (ImageButton) findViewById(R.id.faqBtn);
+        faqBtn.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ClickableViewAccessibility")
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FAQ.class);
