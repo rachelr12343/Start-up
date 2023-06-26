@@ -86,14 +86,6 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-        ImageButton map = (ImageButton)findViewById(R.id.imageButton3);
-        map.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, map.class));
-            }
-        });
-
         oranBtn = findViewById(R.id.oranFaceBtn);
         oranPic = findViewById(R.id.oranFaceImage);
         oranBtn.setOnClickListener(new View.OnClickListener() {

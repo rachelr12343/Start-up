@@ -10,8 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        Do not edit, it looks fine when app is running!
-
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="311dp"
@@ -51,18 +49,15 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageButton
-                android:id="@+id/imageButton4"
+            <ImageView
+                android:id="@+id/faqImage"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/blue"
+                android:layout_height="wrap_content"
                 app:srcCompat="@android:drawable/ic_dialog_info" />
 
 
         </LinearLayout>
 
-        Do not edit this, it looks fine when app is running!
         <LinearLayout
             android:id="@+id/mapButton"
             android:layout_width="70dp"
@@ -91,18 +86,15 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/mapImage"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/blue"
                 app:srcCompat="@android:drawable/ic_dialog_map" />
 
 
         </LinearLayout>
 
-        Do not edit this, it looks fine when app is running!
         <LinearLayout
             android:id="@+id/menuButton"
             android:layout_width="70dp"
@@ -131,18 +123,15 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/menuImage"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/blue"
-                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+                app:srcCompat="@android:drawable/ic_menu_search" />
 
 
         </LinearLayout>
 
-        Do not edit this, it looks fine when app is running!
         <LinearLayout
             android:id="@+id/chatButton"
             android:layout_width="70dp"
@@ -171,12 +160,10 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/blue"
+            <ImageView
+                android:id="@+id/chatImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 app:srcCompat="@android:drawable/stat_notify_chat" />
 
         </LinearLayout>
