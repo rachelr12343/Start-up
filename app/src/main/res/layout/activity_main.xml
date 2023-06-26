@@ -9,7 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/ericsson_buidling">
 
         <LinearLayout
             android:id="@+id/facilitiesBtn"
@@ -50,12 +51,14 @@
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.513">
+            app:layout_constraintVertical_bias="0.704">
 
             <TextView
                 android:id="@+id/textView9"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="About Us"
                 android:textAlignment="center"
@@ -82,10 +85,10 @@
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.841"
+            app:layout_constraintHorizontal_bias="0.844"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.622"
+            app:layout_constraintVertical_bias="0.59"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -121,10 +124,10 @@
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintHorizontal_bias="0.844"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.167"
+            app:layout_constraintVertical_bias="0.699"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -164,7 +167,7 @@
             app:layout_constraintHorizontal_bias="0.155"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.318"
+            app:layout_constraintVertical_bias="0.261"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -246,7 +249,6 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
-
         <ImageView
             android:id="@+id/oranFaceImage"
             android:layout_width="412dp"
@@ -272,9 +274,9 @@
             app:layout_constraintVertical_bias="0.882" />
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="331dp"
-            android:layout_height="157dp"
+            android:id="@+id/imageView6"
+            android:layout_width="203dp"
+            android:layout_height="221dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -283,7 +285,7 @@
             app:srcCompat="@drawable/ericssonpic" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imageView8"
             android:layout_width="123dp"
             android:layout_height="110dp"
             app:layout_constraintBottom_toBottomOf="parent"
