@@ -11,21 +11,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        Do not edit, it looks fine when app is running!
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="82dp"
+            android:layout_marginEnd="12dp"
+            android:background="#619DFE"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.713">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textAlignment="center"
+                android:textColor="#FEFEFE"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:srcCompat="@android:drawable/ic_menu_help" />
+
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="311dp"
             android:layout_height="167dp"
-            android:layout_marginStart="48dp"
+            android:layout_marginStart="16dp"
             android:importantForAccessibility="no"
             android:src="@drawable/ericssonpic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.773" />
-
-        Do not edit this, it looks fine when app is running!
 
         <LinearLayout
             android:id="@+id/faqButton"
@@ -105,10 +130,6 @@
 
 
         </LinearLayout>
-
-        Do not edit this, it looks fine when app is running!
-
-        Do not edit this, it looks fine when app is running!
 
         <LinearLayout
             android:id="@+id/menuButton"
