@@ -24,11 +24,21 @@ public class MainActivity extends AppCompatActivity{
     ImageView oranPic;
     Button firstDayBtn;
     LinearLayout aboutUs;
+    LinearLayout facilities;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        facilities = findViewById(R.id.facilitiesBtn);
+        facilities.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Facilities.class);
+                startActivity(intent);
+            }
+        });
 
         aboutUs = findViewById(R.id.aboutUsBtn);
         aboutUs.setOnClickListener(new View.OnClickListener() {

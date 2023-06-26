@@ -12,9 +12,39 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/facilitiesBtn"
+            android:layout_width="70dp"
+            android:layout_height="85dp"
+            android:background="#1F75FD"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.704"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.513">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Facilities"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/aboutUsBtn"
             android:layout_width="70dp"
-            android:layout_height="82dp"
+            android:layout_height="85dp"
             android:layout_marginEnd="240dp"
             android:background="@color/dark_blue"
             android:orientation="vertical"
@@ -123,7 +153,7 @@
         <LinearLayout
             android:id="@+id/chatButton"
             android:layout_width="70dp"
-            android:layout_height="80dp"
+            android:layout_height="85dp"
             android:layout_marginTop="13dp"
             android:background="@color/dark_blue"
             android:gravity="center"
@@ -256,9 +286,12 @@
             android:id="@+id/imageView6"
             android:layout_width="123dp"
             android:layout_height="110dp"
-            app:srcCompat="@drawable/start_up_logo"
-            tools:layout_editor_absoluteX="144dp"
-            tools:layout_editor_absoluteY="211dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.334"
+            app:srcCompat="@drawable/start_up_logo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
