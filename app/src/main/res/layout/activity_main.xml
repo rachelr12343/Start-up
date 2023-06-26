@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        Do not edit, it looks fine when app is running!
+
 
         <ImageView
             android:id="@+id/imageView3"
@@ -25,13 +25,13 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.773" />
 
-        Do not edit this, it looks fine when app is running!
+
 
         <LinearLayout
             android:id="@+id/faqButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-472dp"
+            android:layout_marginTop="-494dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -97,7 +97,7 @@
             <ImageButton
                 android:id="@+id/imageButton3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/blue"
                 app:srcCompat="@android:drawable/ic_dialog_map"
@@ -106,15 +106,13 @@
 
         </LinearLayout>
 
-        Do not edit this, it looks fine when app is running!
 
-        Do not edit this, it looks fine when app is running!
 
         <LinearLayout
             android:id="@+id/menuButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-131dp"
+            android:layout_marginTop="-138dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -141,7 +139,7 @@
             <ImageButton
                 android:id="@+id/imageButton2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/blue"
                 app:srcCompat="?android:attr/actionModeWebSearchDrawable"
@@ -256,7 +254,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.365"
-            tools:ignore="VisualLintLongText"></TextView>
+            tools:ignore="VisualLintLongText">
+        </TextView>
 
         <ImageView
             android:id="@+id/oranFaceImage"
