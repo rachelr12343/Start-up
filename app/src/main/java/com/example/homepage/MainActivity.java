@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(intent);            }
         });
 
+
         map = findViewById(R.id.mapButton);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +84,14 @@ public class MainActivity extends AppCompatActivity{
                 editor.apply();
                 Intent intent = new Intent(MainActivity.this, Login.class);
                 startActivity(intent);
+            }
+        });
+
+        ImageButton map = (ImageButton)findViewById(R.id.imageButton3);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, map.class));
             }
         });
 
