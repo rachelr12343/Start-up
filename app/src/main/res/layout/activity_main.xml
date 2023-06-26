@@ -27,6 +27,10 @@
 
         Do not edit this, it looks fine when app is running!
 
+        Do not edit this, it looks fine when app is running!
+
+        Do not edit this, it looks fine when app is running!
+
         <LinearLayout
             android:id="@+id/faqButton"
             android:layout_width="70dp"
@@ -38,10 +42,10 @@
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.885"
+            app:layout_constraintHorizontal_bias="0.903"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.509"
+            app:layout_constraintVertical_bias="0.495"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -66,7 +70,7 @@
 
         </LinearLayout>
 
- <LinearLayout
+        <LinearLayout
             android:id="@+id/mapButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
@@ -80,7 +84,7 @@
             app:layout_constraintHorizontal_bias="0.099"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.123"
+            app:layout_constraintVertical_bias="0.115"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -100,15 +104,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="@color/blue"
-                app:srcCompat="@android:drawable/ic_dialog_map"
-                android:importantForAccessibility="no" />
+                android:importantForAccessibility="no"
+                app:srcCompat="@android:drawable/ic_dialog_map" />
 
 
         </LinearLayout>
-
-        Do not edit this, it looks fine when app is running!
-
-        Do not edit this, it looks fine when app is running!
 
         <LinearLayout
             android:id="@+id/menuButton"
@@ -121,10 +121,10 @@
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.624"
+            app:layout_constraintHorizontal_bias="0.633"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.287"
+            app:layout_constraintVertical_bias="0.274"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -150,7 +150,7 @@
 
         </LinearLayout>
 
-<LinearLayout
+        <LinearLayout
             android:id="@+id/chatButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
@@ -161,10 +161,10 @@
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.357"
+            app:layout_constraintHorizontal_bias="0.369"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.123"
+            app:layout_constraintVertical_bias="0.115"
             tools:ignore="TextSizeCheck">
 
             <TextView
@@ -196,6 +196,7 @@
             android:orientation="vertical"
             android:padding="5dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
