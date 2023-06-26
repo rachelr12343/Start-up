@@ -2,6 +2,7 @@ package com.example.homepage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,13 +13,15 @@ public class AboutUs extends AppCompatActivity {
 
     ImageButton backBtn;
 
+    ImageButton logo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
 
-        backBtn = findViewById(R.id.leaveAboutUs);
-        backBtn.setOnClickListener(new View.OnClickListener() {
+        logo.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ClickableViewAccessibility")
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AboutUs.this, MainActivity.class);

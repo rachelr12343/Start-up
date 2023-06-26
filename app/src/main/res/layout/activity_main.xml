@@ -35,10 +35,11 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/imageView10"
+            <ImageButton
+                android:id="@+id/aboutBtn"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
+                android:backgroundTint="@color/dark_blue"
                 app:srcCompat="@android:drawable/ic_menu_help" />
 
         </LinearLayout>

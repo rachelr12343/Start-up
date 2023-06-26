@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity{
     ImageView oranPic;
     Button firstDayBtn;
     LinearLayout aboutUs;
+    ImageButton aboutBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,17 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+        aboutBtn = (ImageButton) findViewById(R.id.aboutBtn);
+        aboutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            @SuppressLint("ClickableViewAccessibility")
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AboutUs.class);
+                startActivity(intent);
+            }
+        });
+
+
         firstDayBtn = findViewById(R.id.guideBtn);
         firstDayBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +59,7 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+
 
         chat = findViewById(R.id.chatButton);
         chat.setOnClickListener(new View.OnClickListener() {
