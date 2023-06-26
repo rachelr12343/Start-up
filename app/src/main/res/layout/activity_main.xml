@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F8F5F5"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,7 +29,7 @@
             android:id="@+id/faqButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-510dp"
+            android:layout_marginTop="-472dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -63,11 +64,12 @@
         </LinearLayout>
 
         Do not edit this, it looks fine when app is running!
+
         <LinearLayout
             android:id="@+id/mapButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-1dp"
+            android:layout_marginTop="8dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -103,11 +105,12 @@
         </LinearLayout>
 
         Do not edit this, it looks fine when app is running!
+
         <LinearLayout
             android:id="@+id/menuButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-150dp"
+            android:layout_marginTop="-131dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -143,11 +146,12 @@
         </LinearLayout>
 
         Do not edit this, it looks fine when app is running!
+
         <LinearLayout
             android:id="@+id/chatButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-1dp"
+            android:layout_marginTop="8dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -265,6 +269,8 @@
             android:id="@+id/guideBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:backgroundTint="#F6F4F4"
             android:text="Guide to your First Day"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
