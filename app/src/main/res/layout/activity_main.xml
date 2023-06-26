@@ -54,9 +54,9 @@
 
         <LinearLayout
             android:id="@+id/faqButton"
-            android:layout_width="70dp"
-            android:layout_height="85dp"
-            android:layout_marginTop="-494dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="-491dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -93,9 +93,9 @@
 
         <LinearLayout
             android:id="@+id/mapButton"
-            android:layout_width="70dp"
-            android:layout_height="85dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="12dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -133,9 +133,9 @@
 
         <LinearLayout
             android:id="@+id/menuButton"
-            android:layout_width="70dp"
-            android:layout_height="85dp"
-            android:layout_marginTop="-138dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="-135dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -173,9 +173,9 @@
 
         <LinearLayout
             android:id="@+id/chatButton"
-            android:layout_width="70dp"
-            android:layout_height="85dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="13dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
