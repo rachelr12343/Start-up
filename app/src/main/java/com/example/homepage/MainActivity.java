@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(intent);            }
         });
 
+
         map = findViewById(R.id.mapButton);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
