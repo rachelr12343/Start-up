@@ -55,7 +55,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/faqBtn"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_weight="1"
