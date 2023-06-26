@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F8F5F5"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,7 +31,7 @@
             android:id="@+id/faqButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-510dp"
+            android:layout_marginTop="-472dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -65,11 +66,11 @@
 
         </LinearLayout>
 
-        <LinearLayout
+ <LinearLayout
             android:id="@+id/mapButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-1dp"
+            android:layout_marginTop="8dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -113,7 +114,7 @@
             android:id="@+id/menuButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-150dp"
+            android:layout_marginTop="-131dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -149,11 +150,11 @@
 
         </LinearLayout>
 
-        <LinearLayout
+<LinearLayout
             android:id="@+id/chatButton"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:layout_marginTop="-1dp"
+            android:layout_marginTop="8dp"
             android:background="@color/blue"
             android:gravity="center"
             android:orientation="vertical"
@@ -248,12 +249,13 @@
             android:layout_width="360dp"
             android:layout_height="258dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="176dp"
             android:text="@string/about"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.415"
+            app:layout_constraintHorizontal_bias="0.395"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.365"
             tools:ignore="VisualLintLongText"></TextView>
 
         <ImageView
