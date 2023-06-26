@@ -26,7 +26,6 @@ public class map extends AppCompatActivity {
     Button funbtn;
     ImageButton stairsbtn;
     ImageView funImg;
-
     Button firstFloor;
 
     @SuppressLint("ClickableViewAccessibility")

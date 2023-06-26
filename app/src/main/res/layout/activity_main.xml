@@ -71,8 +71,8 @@
 
             <ImageButton
                 android:id="@+id/faqBtn"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/dark_blue"
                 app:srcCompat="@android:drawable/ic_dialog_info" />
@@ -122,16 +122,16 @@
 
         <LinearLayout
             android:id="@+id/chatButton"
-            android:layout_width="70dp"
-            android:layout_height="85dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="13dp"
             android:background="@color/dark_blue"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintHorizontal_bias="0.129"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.318"
@@ -214,6 +214,8 @@
                 android:text="@string/logout_text" />
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
 
         <ImageView
             android:id="@+id/oranFaceImage"
