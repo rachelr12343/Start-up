@@ -16,7 +16,7 @@
             android:id="@+id/facilitiesBtn"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:background="@color/dark_blue"
+            android:background="#1F75FD"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -38,9 +38,8 @@
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
-                android:layout_height="44dp"
-                app:srcCompat="@android:drawable/ic_dialog_dialer" />
-
+                app:srcCompat="@android:drawable/ic_dialog_dialer"
+                android:layout_height="46dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,7 +69,8 @@
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="match_parent"
-                android:layout_height="54dp"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/dark_blue"
                 app:srcCompat="@android:drawable/ic_menu_help" />
 
         </LinearLayout>
@@ -108,7 +108,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@android:drawable/ic_dialog_info" />
-
 
         </LinearLayout>
 
@@ -180,7 +179,14 @@
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/chatBtn"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/dark_blue"
                 app:srcCompat="@android:drawable/stat_notify_chat" />
 
         </LinearLayout>
