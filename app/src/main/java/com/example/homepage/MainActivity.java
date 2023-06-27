@@ -19,14 +19,9 @@ public class MainActivity extends AppCompatActivity{
     LinearLayout map;
     LinearLayout faq;
     Button oranBtn;
-    ImageButton chatBtn;
-    ImageButton faqBtn;
     ImageView oranPic;
     Button firstDayBtn;
     LinearLayout aboutUs;
-
-    ImageButton aboutBtn;
-
     LinearLayout facilities;
 
 
@@ -53,17 +48,6 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-        aboutBtn = (ImageButton) findViewById(R.id.aboutBtn);
-        aboutBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            @SuppressLint("ClickableViewAccessibility")
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AboutUs.class);
-                startActivity(intent);
-            }
-        });
-
-
         firstDayBtn = findViewById(R.id.guideBtn);
         firstDayBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +57,6 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-
         chat = findViewById(R.id.chatButton);
         chat.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,17 +64,6 @@ public class MainActivity extends AppCompatActivity{
                 Intent intent = new Intent(MainActivity.this, Chat.class);
                 startActivity(intent);            }
         });
-
-        chatBtn = (ImageButton) findViewById(R.id.chatBtn);
-        chatBtn.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("ClickableViewAccessibility")
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Chat.class);
-                startActivity(intent);
-            }
-        });
-
 
         map = findViewById(R.id.mapButton);
         map.setOnClickListener(new View.OnClickListener() {
@@ -111,16 +83,6 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-        faqBtn = (ImageButton) findViewById(R.id.faqBtn);
-        faqBtn.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("ClickableViewAccessibility")
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, FAQ.class);
-                startActivity(intent);
-            }
-        });
-
         logoutBtn = findViewById(R.id.logoutBtn);
 
         logoutBtn.setOnClickListener(new View.OnClickListener() {
@@ -133,14 +95,6 @@ public class MainActivity extends AppCompatActivity{
                 editor.apply();
                 Intent intent = new Intent(MainActivity.this, Login.class);
                 startActivity(intent);
-            }
-        });
-
-        ImageButton map = (ImageButton)findViewById(R.id.imageButton3);
-        map.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, map.class));
             }
         });
 

@@ -28,7 +28,7 @@
             <TextView
                 android:id="@+id/textView12"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="32dp"
                 android:text="Facilities"
                 android:textAlignment="center"
                 android:textColor="@color/white"
@@ -38,9 +38,8 @@
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
-                android:layout_height="46dp"
-                android:tint="@color/white"
-                app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+                app:srcCompat="@android:drawable/ic_dialog_dialer"
+                android:layout_height="46dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -67,8 +66,8 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/aboutBtn"
+            <ImageView
+                android:id="@+id/imageView10"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:backgroundTint="@color/dark_blue"
@@ -105,14 +104,11 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageButton
-                android:id="@+id/faqBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="25dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/dark_blue"
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 app:srcCompat="@android:drawable/ic_dialog_info" />
-
 
         </LinearLayout>
 
@@ -144,13 +140,10 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/dark_blue"
-                android:importantForAccessibility="no"
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 app:srcCompat="@android:drawable/ic_dialog_map" />
 
 
@@ -174,7 +167,7 @@
             tools:ignore="TextSizeCheck">
 
             <TextView
-                android:layout_width="70dp"
+                android:layout_width="81dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
@@ -184,13 +177,17 @@
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <ImageButton
                 android:id="@+id/chatBtn"
                 android:layout_width="100dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/dark_blue"
-                android:tint="@color/white"
                 app:srcCompat="@android:drawable/stat_notify_chat" />
 
         </LinearLayout>
@@ -253,17 +250,6 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
-        <ImageView
-            android:id="@+id/oranFaceImage"
-            android:layout_width="412dp"
-            android:layout_height="738dp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/oran_s_face" />
-
         <Button
             android:id="@+id/guideBtn"
             android:layout_width="0dp"
@@ -287,6 +273,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.392"
             app:srcCompat="@drawable/startuplogo" />
+
+        <ImageView
+            android:id="@+id/oranFaceImage"
+            android:layout_width="412dp"
+            android:layout_height="738dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/oran_s_face" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
