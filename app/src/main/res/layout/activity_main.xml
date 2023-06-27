@@ -39,6 +39,7 @@
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
                 android:layout_height="46dp"
+                android:tint="@color/white"
                 app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
         </LinearLayout>
 
@@ -71,6 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:backgroundTint="@color/dark_blue"
+                android:tint="@color/white"
                 app:srcCompat="@android:drawable/ic_menu_help" />
 
         </LinearLayout>
@@ -188,6 +190,7 @@
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/dark_blue"
+                android:tint="@color/white"
                 app:srcCompat="@android:drawable/stat_notify_chat" />
 
         </LinearLayout>
