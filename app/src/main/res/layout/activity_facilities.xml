@@ -6,34 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".Facilities">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="90dp"
-        android:background="#619DFE"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageButton
-            android:id="@+id/noMoreFacilities"
-            android:layout_width="74dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#619DFE"
-            app:srcCompat="@drawable/ericsson_logo" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-35dp"
-            android:text="List of Facilities"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+    <include
+        android:id="@+id/toolbar_facilities"
+        layout="@layout/toolbar_facilities" />
 
     <TextView
         android:id="@+id/textView14"
