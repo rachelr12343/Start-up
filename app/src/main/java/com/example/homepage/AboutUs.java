@@ -11,8 +11,6 @@ import android.widget.ImageButton;
 
 public class AboutUs extends AppCompatActivity {
 
-    ImageButton backBtn;
-
     ImageButton logo;
 
     @Override
