@@ -123,7 +123,7 @@
             android:id="@+id/textView22"
             android:layout_width="match_parent"
             android:layout_height="148dp"
-            android:text="Two pool tables can be found on the premises and both are located in breakrooms. You can play a game of pool with colleges during your lunch or whenever you take a quick break during the day."
+            android:text="Two pool tables can be found on the premises and both are located in breakrooms. You can play a game of pool with colleagues during your lunch or whenever you take a quick break during the day."
             android:textAlignment="center"
             android:textColor="@color/black" />
     </LinearLayout>
