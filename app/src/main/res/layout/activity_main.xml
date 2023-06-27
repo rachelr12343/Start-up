@@ -275,18 +275,6 @@
             app:layout_constraintVertical_bias="0.882" />
 
         <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="208dp"
-            android:layout_height="163dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.801"
-            app:srcCompat="@drawable/ericssonpic" />
-
-        <ImageView
             android:id="@+id/imageView8"
             android:layout_width="123dp"
             android:layout_height="110dp"
@@ -295,7 +283,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.392"
-            app:srcCompat="@drawable/start_up_logo" />
+            app:srcCompat="@drawable/startuplogo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
