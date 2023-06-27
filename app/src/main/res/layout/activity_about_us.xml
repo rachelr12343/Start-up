@@ -12,27 +12,40 @@
         android:layout_height="370dp"
         android:text="We are a world leader in the rapidly changing environment of communications technology – by providing hardware, software, and services to enable the full value of connectivity. Founded: 1876. Global headquarters: Stockholm, Sweden. President and CEO: Börje Ekholm. Chairman of The Board: Ronnie Leten. Net sales, Q1 2023: SEK 62.6 billion. EBIT, Q1 2023: SEK 3.0 billion. Listed: Nasdaq Stockholm and on NASDAQ in New York. Number of employees worldwide. South East Asia, Oceania and India: 27,981. North East Asia: 13,136. North America: 11,765. Europe and Latin America: 47,500*. Middle East and Africa: 4,549. Total 104,931. * of which Sweden: 14,384. (numbers from the latest interim report Q1 2023). Gender breakdown (Dec 31, 2022): Female 26% Male 74%."
         android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintVertical_bias="0.29" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="188dp"
-        android:layout_height="96dp"
+        android:layout_width="279dp"
+        android:layout_height="59dp"
         android:text="This app was made by Team Python of the Infuse Programme at Ericsson Athlone."
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
     <include
         android:id="@+id/toolbar_about"
         layout="@layout/toolbar_about" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="330dp"
+        android:layout_height="314dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877"
+        app:srcCompat="@drawable/ericsson1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
