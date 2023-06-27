@@ -182,12 +182,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <ImageButton
-                android:id="@+id/chatBtn"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/dark_blue"
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 app:srcCompat="@android:drawable/stat_notify_chat" />
 
         </LinearLayout>
