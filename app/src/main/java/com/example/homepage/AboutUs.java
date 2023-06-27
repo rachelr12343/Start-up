@@ -11,8 +11,6 @@ import android.widget.ImageButton;
 
 public class AboutUs extends AppCompatActivity {
 
-    ImageButton backBtn;
-
     ImageButton logo;
 
     @Override
@@ -20,8 +18,8 @@ public class AboutUs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
 
+        logo = findViewById(R.id.Logo);
         logo.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("ClickableViewAccessibility")
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AboutUs.this, MainActivity.class);
