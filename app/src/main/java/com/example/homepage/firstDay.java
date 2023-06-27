@@ -18,7 +18,7 @@ public class firstDay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_day);
 
-        logo = findViewById(R.id.logoFirstDay);
+        logo = findViewById(R.id.logo);
         logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
