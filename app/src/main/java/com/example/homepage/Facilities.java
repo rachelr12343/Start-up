@@ -12,7 +12,6 @@ public class Facilities extends AppCompatActivity {
 
     ImageButton logo;
 
-    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
