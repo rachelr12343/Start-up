@@ -11,7 +11,6 @@ import android.widget.ImageButton;
 
 public class firstDay extends AppCompatActivity {
 
-    Button backBtn;
     ImageButton logo;
 
     @Override
@@ -19,18 +18,8 @@ public class firstDay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_day);
 
-        backBtn = findViewById(R.id.backToHome);
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(firstDay.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        logo = findViewById(R.id.logo);
+        logo = findViewById(R.id.logoFirstDay);
         logo.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("ClickableViewAccessibility")
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(firstDay.this, MainActivity.class);
