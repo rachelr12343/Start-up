@@ -16,7 +16,7 @@
             android:id="@+id/facilitiesBtn"
             android:layout_width="70dp"
             android:layout_height="85dp"
-            android:background="#1F75FD"
+            android:background="@color/dark_blue"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -39,6 +39,7 @@
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
                 android:layout_height="46dp"
+                android:background="@color/dark_blue"
                 app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
         </LinearLayout>
 
