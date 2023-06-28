@@ -2,17 +2,20 @@ package com.example.homepage;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity{
 
-    LinearLayout chat;
+    LinearLayout web;
     Button logoutBtn;
     LinearLayout map;
     LinearLayout faq;
@@ -27,6 +30,25 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        web = findViewById(R.id.chatButton);
+
+        web.setOnClickListener(new View.OnClickListener()  {
+            @Override
+            public void onClick(View view)  {
+                gotoUrl( "https://www.teams.com");
+            }
+
+            void gotoUrl(String s){
+                try{
+                    Uri uri = Uri.parse (s);
+                    startActivity(new Intent(Intent.ACTION_VIEW, uri));
+                }
+                catch (Exception e) {
+                    Toast.makeText(getApplicationContext(), "No Website Linked", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         facilities = findViewById(R.id.facilitiesBtn);
         facilities.setOnClickListener(new View.OnClickListener() {
@@ -55,13 +77,8 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-        chat = findViewById(R.id.chatButton);
-        chat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Chat.class);
-                startActivity(intent);            }
-        });
+
+
 
         map = findViewById(R.id.mapButton);
         map.setOnClickListener(new View.OnClickListener() {
@@ -114,6 +131,7 @@ public class MainActivity extends AppCompatActivity{
                 }
             }
         });
-
     }
 }
+
+
