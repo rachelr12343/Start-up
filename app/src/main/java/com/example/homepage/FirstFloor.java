@@ -50,8 +50,9 @@ public class FirstFloor extends AppCompatActivity {
             @SuppressLint("ClickableViewAccessibility")
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(FirstFloor.this, Map.class);
-                FirstFloor.this.startActivity(i);
+                /*Intent i = new Intent(FirstFloor.this, Map.class);
+                startActivity(i);*/
+                finish();
             }
         });
     }
