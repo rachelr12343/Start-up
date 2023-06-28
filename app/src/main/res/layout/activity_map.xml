@@ -200,7 +200,7 @@
         android:id="@+id/buttonBroc"
         android:layout_width="20dp"
         android:layout_height="22dp"
-        android:layout_marginBottom="524dp"
+        android:layout_marginBottom="544dp"
         android:backgroundTint="#FEFEFE"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
