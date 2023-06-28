@@ -39,7 +39,8 @@
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
                 app:srcCompat="@android:drawable/ic_dialog_dialer"
-                android:layout_height="46dp" />
+                android:layout_height="46dp"
+                android:importantForAccessibility="no" />
         </LinearLayout>
 
         <LinearLayout
@@ -71,7 +72,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:backgroundTint="@color/dark_blue"
-                app:srcCompat="@android:drawable/ic_menu_help" />
+                app:srcCompat="@android:drawable/ic_menu_help"
+                android:importantForAccessibility="no" />
 
         </LinearLayout>
 
@@ -101,13 +103,14 @@
                 android:textColor="@color/cardview_light_background"
                 android:textSize="23sp"
                 android:textStyle="bold"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck,TextSizeCheck" />
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_dialog_info" />
+                app:srcCompat="@android:drawable/ic_dialog_info"
+                android:importantForAccessibility="no" />
 
         </LinearLayout>
 
@@ -143,7 +146,8 @@
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_dialog_map" />
+                app:srcCompat="@android:drawable/ic_dialog_map"
+                android:importantForAccessibility="no" />
 
 
         </LinearLayout>
@@ -174,18 +178,20 @@
                 android:textColor="@color/cardview_light_background"
                 android:textSize="23sp"
                 android:textStyle="bold"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck,VisualLintBounds" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no" />
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/stat_notify_chat" />
+                app:srcCompat="@android:drawable/stat_notify_chat"
+                android:importantForAccessibility="no" />
 
         </LinearLayout>
 
@@ -249,13 +255,13 @@
 
         <Button
             android:id="@+id/guideBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="334dp"
+            android:layout_height="55dp"
             android:backgroundTint="@color/blue"
             android:text="Guide to your First Day"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.882" />
@@ -269,7 +275,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.392"
-            app:srcCompat="@drawable/startuplogo" />
+            app:srcCompat="@drawable/startuplogo"
+            android:importantForAccessibility="no" />
 
         <ImageView
             android:id="@+id/oranFaceImage"
@@ -280,7 +287,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/oran_s_face" />
+            app:srcCompat="@drawable/oran_s_face"
+            android:importantForAccessibility="no" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
