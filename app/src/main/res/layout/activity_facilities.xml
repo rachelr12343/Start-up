@@ -15,7 +15,7 @@
         android:id="@+id/textView14"
         android:layout_width="339dp"
         android:layout_height="63dp"
-        android:background="@color/dark_blue"
+        android:background="@drawable/layout2"
         android:text="These Facilities can be Found on the Map Featured in the Home Page"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -29,9 +29,9 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
+        android:background="@drawable/layout2"
         android:layout_width="160dp"
-        android:layout_height="110dp"
-        android:background="@color/dark_blue"
+        android:layout_height="101dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
             android:text="Toilets"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +59,7 @@
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
-            android:layout_height="77dp"
+            android:layout_height="69dp"
             android:text="There are numerous toilets around the building for both men and women to use."
             android:textAlignment="center"
             android:textColor="@color/black" />
@@ -67,9 +67,9 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
+        android:background="@drawable/layout2"
         android:layout_width="160dp"
-        android:layout_height="138dp"
-        android:background="@color/dark_blue"
+        android:layout_height="129dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,7 +100,7 @@
     <LinearLayout
         android:layout_width="160dp"
         android:layout_height="179dp"
-        android:background="@color/dark_blue"
+        android:background="@drawable/layout2"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -131,7 +131,7 @@
     <LinearLayout
         android:layout_width="160dp"
         android:layout_height="205dp"
-        android:background="@color/dark_blue"
+        android:background="@drawable/layout2"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -162,8 +162,8 @@
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="160dp"
-        android:layout_height="140dp"
-        android:background="@color/dark_blue"
+        android:layout_height="129dp"
+        android:background="@drawable/layout2"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -193,8 +193,8 @@
 
     <LinearLayout
         android:layout_width="160dp"
-        android:layout_height="174dp"
-        android:background="@color/dark_blue"
+        android:layout_height="166dp"
+        android:background="@drawable/layout2"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -216,7 +216,7 @@
         <TextView
             android:id="@+id/textView25"
             android:layout_width="match_parent"
-            android:layout_height="144dp"
+            android:layout_height="136dp"
             android:text="The canteen is located next to the main entrance of the building. Hot food can be bought there between 12 and 2 o'clock. Each day there are new options for a full dinner at a cheap price."
             android:textAlignment="center"
             android:textColor="@color/black" />

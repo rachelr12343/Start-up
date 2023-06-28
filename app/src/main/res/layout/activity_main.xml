@@ -14,21 +14,22 @@
 
         <LinearLayout
             android:id="@+id/facilitiesBtn"
-            android:layout_width="70dp"
-            android:layout_height="85dp"
-            android:background="#1F75FD"
+            android:background="@drawable/layout"
+            android:layout_width="75dp"
+            android:layout_height="90dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintHorizontal_bias="0.785"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.572">
+            app:layout_constraintVertical_bias="0.622">
 
             <TextView
                 android:id="@+id/textView12"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Facilities"
                 android:textAlignment="center"
                 android:textColor="@color/white"
@@ -38,28 +39,31 @@
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="match_parent"
-                app:srcCompat="@android:drawable/ic_dialog_dialer"
-                android:layout_height="46dp" />
+                android:layout_height="46dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@android:drawable/ic_dialog_dialer" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/aboutUsBtn"
-            android:layout_width="70dp"
-            android:layout_height="85dp"
+            android:background="@drawable/layout"
+            android:layout_width="75dp"
+            android:layout_height="90dp"
             android:layout_marginEnd="240dp"
-            android:background="@color/dark_blue"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.772"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.572">
+            app:layout_constraintVertical_bias="0.622">
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
                 android:text="About Us"
                 android:textAlignment="center"
                 android:textColor="#FEFEFE"
@@ -69,54 +73,56 @@
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="50dp"
                 android:backgroundTint="@color/dark_blue"
+                android:importantForAccessibility="no"
                 app:srcCompat="@android:drawable/ic_menu_help" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/faqButton"
-            android:layout_width="70dp"
-            android:layout_height="85dp"
+            android:layout_width="75dp"
+            android:layout_height="90dp"
+            android:background="@drawable/layout"
             android:layout_marginTop="-494dp"
-            android:background="@color/dark_blue"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.826"
+            app:layout_constraintHorizontal_bias="0.888"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.658"
+            app:layout_constraintVertical_bias="0.654"
             tools:ignore="TextSizeCheck">
 
             <TextView
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+
                 android:text="@string/faq_text"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="23sp"
                 android:textStyle="bold"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck,TextSizeCheck" />
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
                 app:srcCompat="@android:drawable/ic_dialog_info" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/mapButton"
-            android:layout_width="70dp"
-            android:layout_height="85dp"
+            android:background="@drawable/layout"
+            android:layout_width="75dp"
+            android:layout_height="90dp"
             android:layout_marginTop="8dp"
-            android:background="@color/dark_blue"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="3dp"
@@ -125,14 +131,13 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.221"
+            app:layout_constraintVertical_bias="0.213"
             tools:ignore="TextSizeCheck">
 
             <TextView
-                android:layout_width="73dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
                 android:text="@string/map_text"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="23sp"
@@ -143,6 +148,7 @@
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
                 app:srcCompat="@android:drawable/ic_dialog_map" />
 
 
@@ -150,41 +156,42 @@
 
         <LinearLayout
             android:id="@+id/chatButton"
-            android:layout_width="70dp"
-            android:layout_height="85dp"
+            android:background="@drawable/layout"
+            android:layout_width="75dp"
+            android:layout_height="90dp"
             android:layout_marginTop="13dp"
-            android:background="@color/dark_blue"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.187"
+            app:layout_constraintHorizontal_bias="0.114"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.385"
+            app:layout_constraintVertical_bias="0.377"
             tools:ignore="TextSizeCheck">
 
             <TextView
-                android:layout_width="81dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
                 android:text="@string/chat_text"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="23sp"
                 android:textStyle="bold"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck,VisualLintBounds" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no" />
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
                 app:srcCompat="@android:drawable/stat_notify_chat" />
 
         </LinearLayout>
@@ -249,32 +256,35 @@
 
         <Button
             android:id="@+id/guideBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="334dp"
+            android:layout_height="51dp"
             android:backgroundTint="@color/blue"
             android:text="Guide to your First Day"
+            android:textColor="@color/white"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.882" />
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="123dp"
-            android:layout_height="110dp"
+            android:layout_width="175dp"
+            android:layout_height="162dp"
+            android:importantForAccessibility="no"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.392"
+            app:layout_constraintVertical_bias="0.442"
             app:srcCompat="@drawable/startuplogo" />
 
         <ImageView
             android:id="@+id/oranFaceImage"
             android:layout_width="412dp"
             android:layout_height="738dp"
+            android:importantForAccessibility="no"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

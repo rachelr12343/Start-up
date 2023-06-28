@@ -30,6 +30,7 @@
         android:text="        Facilities"
         android:textColor="#00235E"
         android:textSize="32sp"
+        android:textStyle="bold"
         tools:ignore="TextContrastCheck" />
 
 </androidx.appcompat.widget.Toolbar>

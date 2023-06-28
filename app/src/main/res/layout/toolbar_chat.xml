@@ -27,9 +27,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="100dp"
-        android:text="@string/toolbar_chat"
+        android:text="   Chat"
         android:textColor="#00235E"
         android:textSize="32sp"
+        android:textStyle="bold"
         tools:ignore="TextContrastCheck" />
 
 </androidx.appcompat.widget.Toolbar>

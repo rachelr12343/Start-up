@@ -30,6 +30,7 @@
         android:text="Guide to Your First Day"
         android:textColor="#00235E"
         android:textSize="28sp"
+        android:textStyle="bold"
         tools:ignore="TextContrastCheck" />
 
 </androidx.appcompat.widget.Toolbar>
